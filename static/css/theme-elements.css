@@ -5376,8 +5376,11 @@ section.timeline .timeline-box .owl-carousel {
 
 .testimonial.testimonial-style-2 .testimonial-author p {
 	text-align: center;
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 /* Style 3 */
@@ -5588,7 +5591,10 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .testimonial.testimonial-with-quotes blockquote p {
-	padding: 0 40px;
+    padding: 0 40px;
+    font-family: 'ubuntu';
+    font-size: 22px;
+    font-weight: 100;
 }
 
 /* Transparent Background */

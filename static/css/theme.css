@@ -2215,10 +2215,10 @@ section.section-custom-map-2 section.section {
 }
 
 .home-intro p span {
-     color: #999;
+    color: #999;
     display: block;
-    font-size: 0.58em;
-    padding-top: 7px;
+    font-size: 0.55em;
+    padding-top: 10px;
     line-height: 1.2em;
 }
 .mt-xlg {
@@ -2930,7 +2930,7 @@ html.dark .text-muted {
 	background: #0e0e0e;
 	border-top: 4px solid #0e0e0e;
 	font-size: 0.9em;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	padding: 70px 0 0;
 	position: relative;
 	clear: both;
@@ -4314,8 +4314,21 @@ a.call-link {
 }
 .lead {
     margin-bottom: 20px;
-    font-size: 24px!important;
+    font-size: 20px!important;
     font-weight: 300;
     line-height: 1.1;
     letter-spacing: 0px;
+}
+.testimonial-author {
+    font-size: 20px!important;
+}
+.circle{
+    border-radius: 50%;
+}
+.quote-img{
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+.bg-white {
+    background-color: #fff!important;
 }
