@@ -286,7 +286,7 @@ li {
 
 #header .header-social-icons {
 	float: right;
-	margin: 15px 0 0 10px;
+	margin: 10px 0 0 10px;
 }
 
 #header .header-btn-collapse-nav {
@@ -302,7 +302,7 @@ li {
 }
 
 #header.header-narrow .header-logo img {
-	margin: 12px 12px 12px 0;
+	    margin: 8px 12px 8px 0;
 }
 
 #header.header-narrow .header-nav-main {
@@ -451,7 +451,7 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive .head
 @media (min-width: 992px) {
 	#header .header-nav-main {
 		float: right;
-		margin: 12px 0 0;
+		margin: 8px 0 0;
 		min-height: 45px;
 	}
 
@@ -464,6 +464,9 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive .head
 		padding: 10px 13px;
 		text-transform: uppercase;
 	}
+        a.lang {
+        margin-left: 20px;
+    }
 
 	#header .header-nav-main nav > ul > li > a:focus, #header .header-nav-main nav > ul > li > a:hover {
 		background: transparent;
@@ -4233,4 +4236,23 @@ html.boxed #header .header-body {
 	html.boxed {
 		background: none !important;
 	}
+}
+
+
+/* Custom Ubiqua */
+img.logo {
+    height: 45px;
+}
+.dropdown a, a.dropdown-toggle {
+    color: #333;
+}
+a.lang {
+    color: #737373;
+    font-size: 9px!important;
+    letter-spacing: -0.2px;
+    margin-top: 2px;
+}
+li.lang > a:hover, li.lang.open > a{
+    background-color: inherit!important;
+    color: #444!important;
 }

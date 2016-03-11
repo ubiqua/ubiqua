@@ -6353,6 +6353,7 @@ html.ie11 .scroll-to-top {
 	width: 16px;
 	height: 11px;
 	background: url(../img/flags.png) no-repeat;
+        margin-top: -2px;
 }
 
 .flag.flag-ad {
