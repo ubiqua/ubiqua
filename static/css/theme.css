@@ -13,7 +13,7 @@ body {
 	background-color: #FFF;
 	color: #777;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 22px;
 	margin: 0;
     letter-spacing: -1px;
@@ -1891,7 +1891,7 @@ section.section.section-footer {
 }
 
 section.section.section-with-mockup {
-	margin-top: 120px;
+	/*margin-top: 120px;*/
 }
 
 section.section.section-front {
@@ -4311,4 +4311,11 @@ a.call-link {
 }
 .home-intro.orange a.btn {
     background-color: #444;
+}
+.lead {
+    margin-bottom: 20px;
+    font-size: 24px!important;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0px;
 }
