@@ -3494,11 +3494,11 @@ html .slider-container .tp-caption-overlay-opacity-light {
   color: #f46c22;
 }
 #footer .footer-ribbon {
-  background: #f46c22;
+  /*background: #f46c22;*/
 }
 #footer .footer-ribbon:before {
-  border-right-color: #c04a0a;
-  border-left-color: #c04a0a;
+  /*border-right-color: #c04a0a;
+  border-left-color: #c04a0a;*/
 }
 #footer.light h1,
 #footer.light h2,
@@ -3611,3 +3611,4 @@ html #footer.color-light .footer-copyright {
 html.boxed .body {
   border-top-color: #f46c22;
 }
+

@@ -3105,7 +3105,8 @@ html.dark .text-muted {
 }
 
 #footer .logo {
-	display: block;
+    display: block;
+    opacity: 0.6;
 }
 
 #footer .logo.mb-xl {
@@ -4331,4 +4332,16 @@ a.call-link {
 }
 .bg-white {
     background-color: #fff!important;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+}
+
+.copyright-text{
+    font-size: 13px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 5px;
 }
