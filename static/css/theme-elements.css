@@ -4322,22 +4322,27 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 }
 
 .feature-box .feature-box-icon {
-	background: #CCC;
-	border-radius: 35px;
-	color: #FFF;
-	display: inline-block;
-	float: left;
-	height: 35px;
-	line-height: 35px;
-	margin-right: 10px;
-	position: relative;
-	text-align: center;
-	top: 5px;
-	width: 35px;
+    background: #CCC;
+    border-radius: 40px;
+    color: #FFF;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 37px!important;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 40px;
+    font-size: 18px;
+}
+.feature-box-icon.dark i{
+    color:#000!important;
+    
 }
 
 .feature-box .feature-box-info {
-	padding-left: 50px;
+	padding-left: 60px;
 }
 
 /* Style 2 */
