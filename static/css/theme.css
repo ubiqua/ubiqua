@@ -4400,6 +4400,9 @@ p.lead.dark.medium {
     border-bottom: 3px solid #797979;
     background-position: 0% -76.9083px;   
 }
+.owl-item img {
+    max-width: 350px;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
@@ -4447,7 +4450,7 @@ p.lead.dark.medium {
     }
     .sub-product {
         position: relative;
-        top: 60px;
+        top: 80px;
     }
     .mt-500-sm{
         margin-top: 470px!important;
@@ -4457,6 +4460,199 @@ p.lead.dark.medium {
     }
     
 }
+@media (max-width: 768px){
+    h4.featured-text {
+        max-width: 100%;
+    }
+    .sub-product {
+        top: 100px;
+    }
+    
+
+    
+}
+@media (max-width: 680px){
+    .sub-product {
+        top: 80px;
+    }  
+    .bg_product {
+        max-height: 600px;
+    }
+    .tp-caption.main-label{
+        font-size: 50px!important;
+    }
+    .tp-caption.top-label.top-ubiqua{
+        font-size: 23px!important;
+    }
+    .tp-caption.bottom-label {
+        font-size: 16px!important;
+        line-height: 24px!important;
+        letter-spacing: -1px!important;
+        left: 15px;
+    }
+    .tp-mask-wrap {
+        left: 150px;
+        top: -70px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        left: 35px;
+    }
+    .tp-mask-wrap {
+        overflow: initial!important;
+    }
+    .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
+        height: 400px!important;
+    }
+
+}
+@media (max-width: 600px){
+ 
+    .bg_product {
+        max-height: 550px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        left: 25px;
+    }
+}
+@media (max-width: 550px){
+    .tp-caption.main-label {
+        top: 50px;
+    }
+    .tp-caption.top-label.top-ubiqua {
+        top: 60px;
+    }
+    .tp-caption.bottom-label {
+        top: 70px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        top: 80px;
+        left: 10px;
+    }
+}
+@media (max-width: 510px){
+ 
+    .bg_product {
+        max-height: 500px;
+    }  
+    .title3 h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+    .tp-caption.top-label.top-ubiqua {
+        font-size: 18px!important;
+    }
+    .tp-caption.main-label{
+        font-size: 40px!important;
+    }
+    .tp-caption.bottom-label {
+        font-size: 14px!important;
+        line-height: 18px!important;
+    }
+    .tp-caption.bottom-label {
+        left: 25px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        left: 40px;
+    }
+    
+}
+@media (max-width: 440px){
+ 
+    .tp-caption.bottom-label {
+        display: none!important;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        top: 30px;
+        left: 22px;
+    }
+    .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
+        height: 300px!important;
+    }   
+}
+
+@media (max-width: 430px){
+ 
+    .bg_product {
+        max-height: 450px;
+    }  
+    .title3 h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .mt-500-sm{
+        margin-top: 530px!important;
+    }
+}
+@media (max-width: 400px){
+     .tp-mask-wrap {
+        left: 150px;
+        top: -70px;
+    }
+    .tp-caption.main-label {
+        font-size: 35px!important;
+            left: -45px;
+    }
+    .tp-caption.top-label.top-ubiqua {
+        font-size: 16px!important;
+            left: -40px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        top: 30px;
+        left: -10px;
+        
+    }
+     .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
+        height: 250px!important;
+    }  
+ 
+}
+@media (max-width: 353px){
+ 
+    .mt-500-sm{
+        margin-top: 620px!important;
+    }
+}
+@media (max-width: 340px){
+ 
+    .bg_product {
+        max-height: 400px;
+    }
+    .col-xs-6 {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 315px){
+     .tp-mask-wrap {
+        left: 150px;
+        top: -70px;
+    }
+    .tp-caption.main-label {
+        font-size: 30px!important;
+            left: -65px;
+        top: 60px;
+    }
+    .tp-caption.top-label.top-ubiqua {
+        font-size: 15px!important;
+        left: -48px;
+        top: 80px;
+    }
+    a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
+        top: 30px;
+        left: -20px;
+        top: 70px;
+        
+    }
+ 
+}
+@media (max-width: 280px){
+    .forcefullwidth_wrapper_tp_banner {
+        display: none;
+    }
+ 
+}
+
+
 
 
 
