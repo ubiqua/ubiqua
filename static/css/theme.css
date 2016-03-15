@@ -3107,6 +3107,7 @@ html.dark .text-muted {
 #footer .logo {
     display: block;
     opacity: 0.6;
+    max-width: 100px;
 }
 
 #footer .logo.mb-xl {
@@ -4302,7 +4303,8 @@ a.call-link {
     background-color: #F46C22;
 }
 .home-intro.orange p span {
-     color: #fff;
+    color: #fff;
+    max-width: 70%;
 }
 .home-intro.orange p em {
     color: #444;
@@ -4401,10 +4403,11 @@ p.lead.dark.medium {
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
+        line-height: 30px;
     }
     .btn-md {
         padding: 9px 14px!important;
-        font-size: 16px!important;
+        font-size: 15px!important;
         margin-right: 6px!important;
     }
     a.call-link {
@@ -4428,9 +4431,33 @@ p.lead.dark.medium {
         top: -70px;
     }
    .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
-    height: 500px!important;
+        height: 500px!important;
+    }
 }
+@media (max-width: 991px){
+    .tp-mask-wrap {
+        left: 220px;
+        top: -70px;
+    }
+    .home-intro.orange p span {
+        max-width: 100%;
+    }
+    .bg_product {
+        max-height: 650px;
+    }
+    .sub-product {
+        position: relative;
+        top: 60px;
+    }
+    .mt-500-sm{
+        margin-top: 470px!important;
+    }
+    .mt-300-sm{
+        margin-top: 300px;
+    }
+    
 }
+
 
 
 
