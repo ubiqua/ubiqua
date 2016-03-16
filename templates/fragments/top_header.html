@@ -18,8 +18,8 @@
                             <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
                                 <nav>
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li class="dropdown active">
-                                            <a class="" href="index.html">
+                                        <li class="dropdown {% if_current_page '/index.html' 'active' %}">
+                                            <a class="" href="{% url '/index.html' %}">
                                                 Inicio
                                             </a>
 
@@ -50,8 +50,8 @@
                                             </a>
 
                                         </li>
-                                        <li class="dropdown">
-                                            <a class="" href="#">
+                                        <li class="dropdown {% if_current_page '/contacto.html' 'active' %}">
+                                            <a class="" href="{% url '/contacto.html' %}">
                                                 Contáctenos
                                             </a>
 

@@ -5816,6 +5816,7 @@ section.timeline .timeline-box .owl-carousel {
 	color: #1d2127;
 	padding: 0;
 	margin: 0 0 9px;
+    letter-spacing: -1.5px;
 }
 
 .call-to-action p {
@@ -5897,7 +5898,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .call-to-action.with-button-arrow .call-to-action-btn {
-	top: 30%;
+	/*top: 30%;*/
 }
 
 .call-to-action.button-centered .call-to-action-content {
