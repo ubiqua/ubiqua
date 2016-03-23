@@ -19,9 +19,9 @@ h1 {
 }
 
 h2 {
-	font-size: 2.4em;
+	font-size: 2.7em;
 	font-weight: 300;
-	line-height: 42px;
+	line-height: 44px;
 	margin: 0 0 32px 0;
     letter-spacing: -2px;
 }
@@ -50,6 +50,8 @@ h5 {
 	line-height: 18px;
 	margin: 0 0 14px 0;
 	text-transform: uppercase;
+    font-family: 'Ubuntu';
+    letter-spacing: -1px;
 }
 
 h6 {
@@ -5023,11 +5025,11 @@ html.webkit .thumb-info-no-borders .thumb-info-wrapper {
 }
 /* Timeline */
 section.timeline {
-	width: 75%;
-	margin: 50px 12.5% 0;
-	position: relative;
-	float: left;
-	padding-bottom: 120px;
+	width: 84%;
+    margin: 50px 3% 0 3%;
+    position: relative;
+    float: left;
+    padding-bottom: 120px;
 }
 
 section.timeline:after {
@@ -5056,7 +5058,7 @@ section.timeline .timeline-date {
 	position: relative;
 	display: block;
 	clear: both;
-	width: 200px;
+	width: 150px;
 	height: 45px;
 	padding: 5px;
 	border: 1px solid #E5E5E5;
@@ -5071,7 +5073,7 @@ section.timeline .timeline-date h3 {
 	display: block;
 	text-align: center;
 	color: #757575;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	line-height: 32px;
 }
 
@@ -5102,17 +5104,16 @@ section.timeline .timeline-title .timeline-title-tags a {
 }
 
 section.timeline .timeline-box {
-	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
-	border: 1px solid #E5E5E5;
+	/*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);*/
+	/*border: 1px solid #E5E5E5;*/
 	border-radius: 4px;
-	margin: 20px 10px 10px 10px;
+	margin: -50px 10px 10px -30px;
 	padding: 10px;
 	position: relative;
 	width: 45.7%;
 	float: left;
 	z-index: 1;
-	margin-bottom: 30px;
-	background: #FFF;
+    margin-bottom: -15px;
 }
 
 section.timeline .timeline-box.left {
@@ -5128,28 +5129,28 @@ section.timeline .timeline-box.left:before {
 	height: 7px;
 	margin-right: -5px;
 	position: absolute;
-	right: -6.8%;
-	top: 22px;
+	right: -20%;
+	top: 82px;
 	width: 8px;
 }
 
 section.timeline .timeline-box.left:after {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	background: #FFF;
-	border-right: 1px solid #E5E5E5;
-	border-top: 1px solid #E5E5E5;
-	content: "";
-	display: block;
-	height: 14px;
-	position: absolute;
-	right: -8px;
-	top: 20px;
-	width: 14px;
-	z-index: 0;
+	    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #FFFFFF;
+    border-right: 2px solid #F16B23;
+    border-top: 2px solid #F16B23;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    width: 14px;
+    z-index: 0;
 }
 
 section.timeline .timeline-box.right {
@@ -5157,6 +5158,7 @@ section.timeline .timeline-box.right {
 	float: right;
 	right: -1px;
 	margin-top: 40px;
+    margin-right: -30px!important;
 }
 
 section.timeline .timeline-box.right:before {
@@ -5168,8 +5170,8 @@ section.timeline .timeline-box.right:before {
 	height: 7px;
 	margin-left: -5px;
 	position: absolute;
-	left: -7.2%;
-	top: 32px;
+    left: -21%;
+	top: 92px;
 	width: 8px;
 }
 
@@ -5180,14 +5182,14 @@ section.timeline .timeline-box.right:after {
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 	background: #FFF;
-	border-left: 1px solid #E5E5E5;
-	border-bottom: 1px solid #E5E5E5;
+	border-left: 2px solid #F16B23;
+    border-bottom: 2px solid #F16B23;
 	content: "";
 	display: block;
 	height: 14px;
 	position: absolute;
-	left: -8px;
-	top: 30px;
+	left: -20px;
+	top: 90px;
 	width: 14px;
 	z-index: 0;
 }
@@ -5392,7 +5394,7 @@ section.timeline .timeline-box .owl-carousel {
 .testimonial.testimonial-style-3 blockquote {
 	background: #f2f2f2 !important;
 	border-radius: 4px;
-	padding: 12px 30px;
+	padding: 18px 30px;
 }
 
 .testimonial.testimonial-style-3 blockquote:before {
@@ -5408,10 +5410,11 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .testimonial.testimonial-style-3 blockquote p {
-	color: #777;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 1em;
-	font-style: normal;
+	    color: #777;
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    letter-spacing: -0.5px;
 }
 
 .testimonial.testimonial-style-3 .testimonial-author {
@@ -5969,15 +5972,16 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .circular-bar strong {
-	display: block;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 30px;
-	position: absolute;
-	top: 35%;
-	width: 80%;
-	left: 10%;
-	text-align: center;
+	    display: block;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 30px;
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    color:#444;
 }
 
 .circular-bar label {
