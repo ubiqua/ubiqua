@@ -4476,6 +4476,17 @@ h4.heading-primary small {
     /* margin-top: -5px; */
     /* font-style: italic; */
 }
+.noborder {
+    border: none!important;
+    margin-top: -15px;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
 
 @media (max-width: 1200px) {
     .home-intro p {

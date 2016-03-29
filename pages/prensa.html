@@ -1,0 +1,192 @@
+page_title: Prensa
+title: Prensa & Media
+subtitle: Artículos y noticias sobre nosotros
+page_keywords: Lorem Ipsum
+page_description: Lorem Ipsum
+
+
+{% extends "base_page.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h5>Filtrar por Medio:</h5>
+
+    <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options='{"layoutMode": "fitRows", "filter": "*"}'>
+        <li data-option-value="*" class="active"><a href="#">Mostrar todos</a></li>
+        <li data-option-value=".martes"><a href="#">Martes Financiero</a></li>
+        <li data-option-value=".prensa"><a href="#">La Prensa</a></li>
+        <li data-option-value=".video"><a href="#">Videos</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="row">
+
+        <ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+            <li class="col-md-12 isotope-item mt-xl martes">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="http://www.martesfinanciero.com/history/2015/10/20/voz_calificada.asp" target="_blank">
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-lighten noborder">
+                                    <span class="thumb-info-wrapper ">
+                                        <img src="{% static '/img/media/media1.jpg' %}" class="img-responsive" alt="">
+                                        <span class="thumb-info-action">
+                                            <span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-info">
+                            <div class="row">
+                                <div class="col-md-12 center">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-calendar"></i> 20 de Octubre 2015
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tags"></i>Tecnología
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="heading-primary">2016, AÑO PARA CREAR UN DEPARTAMENTO DE IT LIGERO</h4>
+                        <p class="mt-xlg">Cuando una empresa quiere innovar, el departamento de IT es responsable de ejecutar y mantener un proyecto nuevo. Esta responsabilidad  hace que se demore la implementación del proyecto, luego  crea un gasto recurrente de tiempo y de dinero para  sostener el objetivo planeado.</p>
+                        <p>Al ritmo en que la tecnología sigue su evolución, para cuando un proyecto llega a convertirse en realidad...</p>
+
+                        <a href="http://www.martesfinanciero.com/history/2015/10/20/voz_calificada.asp" target="_blank" class="btn btn-primary">Leer más</a>
+
+                        <ul class="portfolio-details">
+                            <li>
+                                <p><strong>Medio:</strong></p>
+
+                                <ul class="list list-inline list-icons">
+                                    <li><i class="fa fa-newspaper-o"></i> Martes Financiero</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-12 isotope-item mt-xl martes">
+                <div class="row">
+                    <div class="col-md-6 float-right">
+                        <div class="portfolio-item">
+                            <a href="http://www.martesfinanciero.com/history/2015/04/14/dossier_2.asp" target="_blank">
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-lighten noborder">
+                                    <span class="thumb-info-wrapper ">
+                                        <img src="{% static '/img/media/media2.jpg' %}" class="img-responsive" alt="">
+                                        <span class="thumb-info-action">
+                                            <span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-left">
+                        <div class="portfolio-info">
+                            <div class="row">
+                                <div class="col-md-12 center">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-calendar"></i> 14 de Abril 2015
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tags"></i>Tecnología
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="heading-primary">UBIQUA, EL EXPERTO EN PROCESOS</h4>
+                        <p class="mt-xlg">Desde que estudiaba en la Universidad de Stanford en California, Diego Molino tenía en su mente la idea de crear un negocio y así lo hizo. Aun sin terminar sus estudios en Silicon Valley fundó Ubiqua, una empresa que se dedica al desarrollo de software empresarial.</p>
+                        <p>Mientras  hacía sus estudios universitarios, Molino aprendió que cuando alguien pretende crear una empresa...</p>
+
+                        <a href="http://www.martesfinanciero.com/history/2015/04/14/dossier_2.asp" target="_blank" class="btn btn-primary">Leer más</a>
+
+                        <ul class="portfolio-details">
+                            <li>
+                                <p><strong>Medio:</strong></p>
+
+                                <ul class="list list-inline list-icons">
+                                    <li><i class="fa fa-newspaper-o"></i> Martes Financiero</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-12 isotope-item mt-xl martes">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="http://www.martesfinanciero.com/history/2014/02/25/dossier.asp" target="_blank">
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-lighten noborder">
+                                    <span class="thumb-info-wrapper ">
+                                        <img src="{% static '/img/media/media3.jpg' %}" class="img-responsive" alt="">
+                                        <span class="thumb-info-action">
+                                            <span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-info">
+                            <div class="row">
+                                <div class="col-md-12 center">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-calendar"></i> 25 de Febrero 2014
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tags"></i>Tecnología
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="heading-primary">TECNOLÓGICAS: LOS PROS Y LOS CONTRAS</h4>
+                        <p class="mt-xlg">Las actividades tecnológicas desarrolladas por pequeñas empresas crecen y tienen su impacto en la economía nacional. Son un modelo de apertura de nuevas empresas, que generan nuevos y mejores empleos, y que cuentan con una amplia cartera de servicios ofertados en un mercado que crece.</p>
+                        <p>En la actualidad su mayor oferta en el istmo se orienta...</p>
+
+                        <a href="http://www.martesfinanciero.com/history/2014/02/25/dossier.asp" target="_blank" class="btn btn-primary">Leer más</a>
+
+                        <ul class="portfolio-details">
+                            <li>
+                                <p><strong>Medio:</strong></p>
+
+                                <ul class="list list-inline list-icons">
+                                    <li><i class="fa fa-newspaper-o"></i> Martes Financiero</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+           
+        </ul>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}
