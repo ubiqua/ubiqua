@@ -1,24 +1,28 @@
-<section class="parallax section section-text-light section-parallax section-center mt-none mb-none" data-stellar-background-ratio="0.5" style="background-image: url('{% static 'img/index/bg2.jpg' %}');">
+<section class="parallax section section-text-light section-parallax section-center mt-none mb-xl" data-stellar-background-ratio="0.5" style="background-image: url('{% static 'img/index/bg2.jpg' %}');">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <img class="circle quote-img" src="http://placehold.it/350x350">
         <div class="owl-carousel owl-theme nav-bottom rounded-nav mb-none" data-plugin-options='{"items": 1, "loop": false}'>
-          <div>
-            <div class="col-md-12">
-              <div class="testimonial testimonial-style-2 testimonial-with-quotes mb-none">
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </blockquote>
-                <div class="testimonial-author">
-                  <p><strong>John Doe</strong></p>
-                    <small>CEO Lorem ipsum</small>
+
+          {# QUOTE_LIST defined in client_quotes.py #}
+          {% for quote in QUOTE_LIST %}
+            <div>
+              <div class="col-md-12">
+                <div class="testimonial testimonial-style-2 testimonial-with-quotes mb-none">
+                  <blockquote>
+                    <p>{{ quote.quote }}</p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <p><strong>{{ quote.speaker }}</strong></p>
+                    <small>{{ quote.company }}</small>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-         
-      
+          {% endfor %}
+
+
         </div>
       </div>
     </div>
