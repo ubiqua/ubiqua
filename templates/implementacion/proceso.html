@@ -1,37 +1,38 @@
 <div class="container mb-xl">
-
   <div class="row">
     <div class="col-md-12 center">
       <h2 class="word-rotator-title mb-sm"><strong>Sincronización</strong> de datos</h2>
       <p class="lead">Para que nuestros servicios sean aprovechados al máximo, nosotros sincronizamos la información de tu empresa con nuestros servicios. De esta manera, tus vendedores, supervisores y gerentes ven tu información en tiempo real y ustedes evitan trabajo doble y errores.</p>
     </div>
   </div>
-  <br>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="title">
-        <h2><strong>Opción 1:</strong> Por medio de exportación de archivos .csv, .txt o Excel</h2>
-      </div>
+</div>
+<div class="container">
+  <div class="row center">
+    <div class="col-md-6">
+      <h2 class="mb-none word-rotator-title mt-lg">
+        Opción 1:
+      </h2>
+      <p class="lead">Por medio de exportación de archivos .csv, .txt o Excel. </p>
       <p>Importa data automáticamente de tu sistema a UBIQUA por medio de archivos. Una opción muy rápida de hacer.</p>
     </div>
-
-    <div class="col-md-8">
-      <img class="img-responsive center" src="{% static '/img/productos/imp/excel.png' %}" alt="">
-  </div>
-  </div>
-
-  <br /><br />
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="title">
-        <h2><strong>Opción 2:</strong> Directamente a tu ERP</h2>
-      </div>
+		<div class="col-md-6">
+			<h2 class="mb-none word-rotator-title mt-lg">
+				Opción 2:
+			</h2>
+			<p class="lead"> Directamente a tu ERP:</p>
       <p>Somos sumamente flexibles con el tipo de ERP al que nos conectamos. Tenemos una vasta experiencia con distintos sistemas. Tenemos aliados estrátegicos certificados en tu sistema ERP para asegurarnos que la sincronización sea 100% segura. En caso de que su sistema, Nuestro técnicos hacen un diagnóstico detallando cómo vamos a sincronizar la información y con qué frecuencia.  </p>
-    </div>
-    <div class="col-md-8">
-      <img class="img-responsive center" src="{% static '/img/productos/imp/erps.png' %}" alt="">
-    </div>
-  </div>
+		</div>
+	</div>
+	<div class="row center mt-xl">
+		<div class="owl-carousel owl-theme" data-plugin-options='{"items": 6, "autoplay": true, "autoplayTimeout": 3000}'>
 
+      {# ERP_IMAGE_LIST defined in implementation_context.py #}
+      {% for image_url in ERP_IMAGE_LIST %}
+				<div>
+					<img class="img-responsive" src="{% static image_url %}" alt="">
+				</div>
+      {% endfor %}
+      
+		</div>
+	</div>
 </div>
