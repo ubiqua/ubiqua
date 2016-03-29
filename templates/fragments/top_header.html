@@ -4,7 +4,7 @@
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-logo">
-                        <a href="index.html">
+                        <a href="{% url '/index.html' %}">
                             <img class="logo" alt="Ubiqua Panamá" src="{% static '/img/logo.png' %}">
                         </a>
                     </div>
@@ -51,8 +51,11 @@
                                             </a>
 
                                         </li>
-                                        <li class="dropdown">
-                                            <a class="" href="#">
+                                        <li class="dropdown 
+                                                   {% if_current_page '/blog.html' 'active' %}
+                                                   {% if_current_page '/blog/demo_post.html' 'active' %}
+                                                   ">
+                                            <a class="" href="{% url '/blog.html' %}">
                                                 Blog
                                             </a>
 
