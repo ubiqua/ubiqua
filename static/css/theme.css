@@ -2609,7 +2609,7 @@ html.dark .text-muted {
 }
 
 .mb-xlg {
-	margin-bottom: 30px !important;
+	margin-bottom: 40px !important;
 }
 
 /* spacement left	*/
@@ -4465,6 +4465,9 @@ p.lead.dark.medium {
 .page-header-custom-background p {
     color: #fff;
     opacity: 0.95;
+}
+.right {
+    text-align: right;
 }
 
 @media (max-width: 1200px) {

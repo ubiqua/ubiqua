@@ -24,17 +24,24 @@
                                             </a>
 
                                         </li>
-                                        <li class="dropdown">
-                                            <a class="" href="#">
+                                        <li class="dropdown 
+                                                   {% if_current_page '/nosotros/historia.html' 'active' %}
+                                                   {% if_current_page '/nosotros/quienes_somos.html' 'active' %}
+                                                   ">
+                                            <a class="dropdown-toggle" href="#">
                                                 Nosotros
                                             </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="{% url '/nosotros/quienes_somos.html' %}">Quiénes Somos</a></li>
+                                                <li><a href="{% url '/nosotros/historia.html' %}">Historia</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="dropdown ">
+                                        <li class="dropdown {% if_current_page '/productos/implementacion.html' 'active' %}">
                                             <a class="dropdown-toggle" href="#">
                                                 Productos
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="{% url '/implementacion.html' %}">Implementación</a></li>
+                                                <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
                                             </ul>
 
                                         </li>
