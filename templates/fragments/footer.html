@@ -65,9 +65,9 @@
         <div class="col-md-4">
           <nav id="sub-menu">
             <ul>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#l">Sitemap</a></li>
-              <li><a href="#">Prensa</a></li>
+              <li><a href="{% url '/blog.html' %}">Blog</a></li>
+              <li><a href="{% url '/sitemap.xml' %}">Sitemap</a></li>
+              <li><a href="{% url '/prensa.html' %}">Prensa</a></li>
               <li><a href="{% url '/contacto.html' %}">Contáctenos</a></li>
             </ul>
           </nav>

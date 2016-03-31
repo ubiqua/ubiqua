@@ -4469,6 +4469,24 @@ p.lead.dark.medium {
 .right {
     text-align: right;
 }
+h4.heading-primary small {
+    color: #F46C22 !important;
+    font-size: 14px;
+    font-weight: 400;
+    /* margin-top: -5px; */
+    /* font-style: italic; */
+}
+.noborder {
+    border: none!important;
+    margin-top: -15px;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
 
 @media (max-width: 1200px) {
     .home-intro p {
