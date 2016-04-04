@@ -4489,6 +4489,9 @@ h4.heading-primary small {
 nav a {
     color: #333;
 }
+.player .video-wrapper .video.cover {
+    border: 2px solid #000;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
