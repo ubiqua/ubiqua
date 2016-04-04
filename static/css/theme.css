@@ -4491,7 +4491,10 @@ nav a {
 }
 .player .video-wrapper .video.cover {
     border: 2px solid #000;
+}.orange {
+    color: #F46C22;
 }
+
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
