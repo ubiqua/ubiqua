@@ -4486,8 +4486,9 @@ h4.heading-primary small {
 .float-left {
     float: left;
 }
-
-
+nav a {
+    color: #333;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
