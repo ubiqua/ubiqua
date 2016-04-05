@@ -4494,6 +4494,11 @@ nav a {
 }.orange {
     color: #F46C22;
 }
+img.circle.quote-img {
+    max-width: 100px;
+    text-align: center;
+    display: initial;
+}
 
 @media (max-width: 1200px) {
     .home-intro p {
