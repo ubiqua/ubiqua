@@ -6219,7 +6219,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .counters.counters-text-dark .counter .fa, .counters.counters-text-dark .counter .icons, .counters.counters-text-dark .counter strong, .counters.counters-text-dark .counter label {
-	color: #2e353e !important;
+	color: #2e353e;
 }
 
 /* Word Rotate */
