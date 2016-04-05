@@ -5921,8 +5921,8 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .call-to-action.call-to-action-in-footer {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	    padding-top: 30px;
+    padding-bottom: 40px;
 	margin-top: 30px;
 	margin-bottom: -50px !important;
 }
