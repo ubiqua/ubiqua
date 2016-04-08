@@ -4489,6 +4489,30 @@ h4.heading-primary small {
 nav a {
     color: #333;
 }
+.player .video-wrapper .video.cover {
+    border: 2px solid #000;
+}.orange {
+    color: #F46C22;
+}
+img.circle.quote-img {
+    max-width: 100px;
+    text-align: center;
+    display: initial;
+}
+.bg-orange {
+    background-color: #F46C22!important;
+    color: #fff!important;
+}
+.bg-orange i.fa, .bg-orange label, .bg-orange p {
+    color: #fff!important;
+}
+section.section.bg-orange {
+    margin: 15px 0;
+    padding: 15px 0;
+}
+.bg-orange .counter strong {
+    color: #fff!important;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;

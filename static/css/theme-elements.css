@@ -319,10 +319,12 @@ blockquote.with-borders {
 
 /* Paragraphs */
 p {
-	    color: #777;
+    color: #777;
     line-height: 19px;
     margin: 0 0 20px;
     font-size: 15px;
+    /* letter-spacing: -0.5px; */
+    word-spacing: 1.2px;
 }
 
 p.featured {
@@ -4362,7 +4364,7 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 
 .feature-box.feature-box-style-2 .feature-box-icon i.fa,
 .feature-box.feature-box-style-2 .feature-box-icon i.icons {
-	font-size: 54px;
+	font-size: 45px;
 }
 
 .feature-box.feature-box-style-2 .feature-box-info {
@@ -5919,8 +5921,8 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .call-to-action.call-to-action-in-footer {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	    padding-top: 30px;
+    padding-bottom: 40px;
 	margin-top: 30px;
 	margin-bottom: -50px !important;
 }
@@ -6217,7 +6219,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .counters.counters-text-dark .counter .fa, .counters.counters-text-dark .counter .icons, .counters.counters-text-dark .counter strong, .counters.counters-text-dark .counter label {
-	color: #2e353e !important;
+	color: #2e353e;
 }
 
 /* Word Rotate */
