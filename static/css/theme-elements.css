@@ -4332,13 +4332,13 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
     display: inline-block;
     float: left;
     height: 40px;
-    line-height: 37px!important;
+    line-height: 40px!important;
     margin-right: 10px;
     position: relative;
     text-align: center;
-    top: 5px;
+    /* top: 5px; */
     width: 40px;
-    font-size: 18px;
+    font-size: 25px;
 }
 .feature-box-icon.dark i{
     color:#000!important;
@@ -6151,11 +6151,11 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .counters label {
-	display: block;
+	    display: block;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .counters .counter-side-icon .fa, .counters .counter-side-icon .icons, .counters .counter-side-icon strong {

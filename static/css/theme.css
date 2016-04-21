@@ -4276,13 +4276,14 @@ html.sticky-header-active #header .header-body {
     border-bottom: 3px solid #f46c22;
 }
 .tp-caption.main-label{
-    font-size: 70px!important;
+    font-size: 55px!important;
     letter-spacing: -3px!important;
 }
 .tp-caption.top-label.top-ubiqua {
-    font-size: 32px!important;
+    font-size: 28px!important;
     font-weight: 100!important;
     letter-spacing: -1px!important;
+    line-height: 32px!important;
 }
 .tp-caption.bottom-label {
     font-size: 21px!important;
@@ -4406,6 +4407,11 @@ p.lead.dark.medium {
     border-bottom: 3px solid #797979;
     background-position: 0% -76.9083px;   
 }
+.bg_producto{
+    background-image: url('../img/index/bg.jpg')!important;
+    border-bottom: 3px solid #797979;
+    background-position: 0% -76.9083px;   
+}
 .owl-item img {
     max-width: 350px;
 }
@@ -4512,6 +4518,27 @@ section.section.bg-orange {
 }
 .bg-orange .counter strong {
     color: #fff!important;
+}
+p.lead2 {
+    font-size: 16px;
+    margin-top: -15px;
+}
+.circle.icon {
+    max-width: 60%;
+    margin-bottom: 15px;
+}
+.btn-sm{
+    font-size: 14px;
+}
+.counters label {
+    display: block;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.p-30{
+    padding:30px 0!important;
 }
 @media (max-width: 1200px) {
     .home-intro p {
