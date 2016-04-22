@@ -3,37 +3,40 @@
 def client_list():
     return [
         {
-            "LOGO": "/img/clientes/arrocha.png",
+            "LOGO": "/img/clientes_bw/arce.jpg",
             "NAME": "Arrocha",
         }, {
-            "LOGO": "/img/clientes/cg_haseth.png",
+            "LOGO": "/img/clientes_bw/arrocha.jpg",
             "NAME": "CG Haseth",
         },{
-            "LOGO": "/img/clientes/del_dia.png",
+            "LOGO": "/img/clientes_bw/feduro.jpg",
             "NAME": "Del Día",
         },{
-            "LOGO": "/img/clientes/feduro.png",
+            "LOGO": "/img/clientes_bw/mota.jpg",
             "NAME": "Feduro",
         },{
-            "LOGO": "/img/clientes/felipe_motta.png",
+            "LOGO": "/img/clientes_bw/global.jpg",
             "NAME": "Felipe Motta",
         },{
-            "LOGO": "/img/clientes/impa.png",
+            "LOGO": "/img/clientes_bw/haseth.jpg",
             "NAME": "Impa",
         },{
-            "LOGO": "/img/clientes/medimex.png",
+            "LOGO": "/img/clientes_bw/impadoel.jpg",
             "NAME": "medimex",
         },{
-            "LOGO": "/img/clientes/metro.png",
+            "LOGO": "/img/clientes_bw/medimex.jpg",
             "NAME": "Metro",
         },{
-            "LOGO": "/img/clientes/tasty.png",
+            "LOGO": "/img/clientes_bw/metro.jpg",
             "NAME": "Tasty Choice",
         },{
-            "LOGO": "/img/clientes/tshirt.png",
+            "LOGO": "/img/clientes_bw/tasty.jpg",
             "NAME": "Tshirt",
         },{
-            "LOGO": "/img/clientes/wurth.png",
+            "LOGO": "/img/clientes_bw/tshirt.jpg",
+            "NAME": "Wurth",
+        },{
+            "LOGO": "/img/clientes_bw/wurth.jpg",
             "NAME": "Wurth",
         },
     ]
@@ -41,43 +44,43 @@ def client_list():
 def brand_list():
     return [
         {
-            "LOGO": "/img/brands/bacardi.png",
+            "LOGO": "/img/brands_bw/bacardi.jpg",
             "NAME": "Bacardi"
         }, {
-            "LOGO": "/img/brands/bayer.png",
+            "LOGO": "/img/brands_bw/bayer.jpg",
             "NAME": "Bayer"
         }, {
-            "LOGO": "/img/brands/flor.png",
+            "LOGO": "/img/brands_bw/flor.jpg",
             "NAME": "Flor de Caña"
         },{
-            "LOGO": "/img/brands/greygoose.png",
+            "LOGO": "/img/brands_bw/glaxo.jpg",
             "NAME": "Grey Goose"
         },{
-            "LOGO": "/img/brands/gsk.png",
+            "LOGO": "/img/brands_bw/grey.jpg",
             "NAME": "GSK"
         },{
-            "LOGO": "/img/brands/hersheys.png",
+            "LOGO": "/img/brands_bw/her.jpg",
             "NAME": "Hershey's"
         },{
-            "LOGO": "/img/brands/novartis.png",
+            "LOGO": "/img/brands_bw/novartis.jpg",
             "NAME": "Novartis"
         },{
-            "LOGO": "/img/brands/pepsico.png",
+            "LOGO": "/img/brands_bw/pepsico.jpg",
             "NAME": "Pepsico"
         },{
-            "LOGO": "/img/brands/pfizer.png",
+            "LOGO": "/img/brands_bw/pfizer.jpg",
             "NAME": "Pfizer"
         },{
-            "LOGO": "/img/brands/pg.png",
+            "LOGO": "/img/brands_bw/pg.jpg",
             "NAME": "P&G"
         },{
-            "LOGO": "/img/brands/saba.png",
+            "LOGO": "/img/brands_bw/saba.jpg",
             "NAME": "Saba"
         },{
-            "LOGO": "/img/brands/saralee.png",
+            "LOGO": "/img/brands_bw/saralee.jpg",
             "NAME": "Sara Lee"
         },{
-            "LOGO": "/img/brands/shell.png",
+            "LOGO": "/img/brands_bw/shell.jpg",
             "NAME": "Shell"
         },
     ]

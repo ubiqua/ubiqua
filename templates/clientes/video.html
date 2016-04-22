@@ -1,17 +1,32 @@
-<div class="container">
+<div class="container mb-xlg">
 
     <div class="row">
-      <div class="col-md-12 center">
-        <h2 class="mt-xl mb-none">Casos de <strong>Éxito</strong></h2>
-        <hr class="invisible">
+        <div class="col-md-4">
+            <div class="title">
+                <h2>Nuestra <strong> Experiencia</strong></h2>
+                <span>Tenemos ámplios conocimientos en las industrias de:</span>
+            </div>
+            {# Defined in client_list.py #}
+        {% for industry_item in INDUSTRY_LIST %}
+    			<div class="col-md-12">
+    				<div class="feature-box feature-box-style-6">
+    					<div class="feature-box-icon">
+    						<i class="fa {{ industry_item.ICON }} text-color-primary"></i>
+    					</div>
+    					<div class="feature-box-info">
+    						<h4 class="pt-xs"><strong class="semi-bold">{{ industry_item.NAME }}</strong></h4>
+    					</div>
+    				</div>
+    			</div>
+        {% endfor %}
+
+        </div>
+        <div class="col-md-8">
+
+            <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://player.vimeo.com/video/79888716?color=F27735" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+        </div>
     </div>
 
 
-    <div class="col-md-12">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
-      </div>
-    </div>
-
-  </div>
 </div>

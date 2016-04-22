@@ -1,19 +1,21 @@
 
-  <div class="container mb-xlg">
-    <div class="row">
-        <div class="col-md-12 center">
-            <h2 class="word-rotator-title mb-sm">Nuestros clientes son <string>lideres de industria...</string></h2>
-            <hr class="tall">
-        </div>
+<div class="container mb-xlg">
+     <div class="row mb-xlg center">
+            <div class="col-md-12 ">
+              <h2 class="word-rotator-title mb-sm">Algunas grandes empresas que ya usan<strong> Nuestras Soluciones</strong></h2>
+              <p class="lead">Más de 600 usuarios en 12 empresas de distribución y almacenamiento de mercancías</p>
+            </div>
     </div>
+    <hr class="tall">
     <div class="row">
         <div class="col-md-12">
+            <h4>Nuestros clientes son lideres de la industria </h4>
             <div class="content-grid content-grid-dashed mt-xlg mb-lg">
                 <div class="row content-grid-row">
 
                 {# Defined in client_list.py #}
                 {% for client_item in CLIENT_LIST %}
-                  <div class="content-grid-item col-md-3 center">
+                  <div class="content-grid-item col-md-2 center">
                       <img
                         class="img-responsive"
                         src="{% static client_item.LOGO %}"
@@ -22,26 +24,17 @@
                   </div>
                 {% endfor %}
 
+                </div>
             </div>
         </div>
-    </div>
-  </div>
-
-  <div class="row">
-      <div class="col-md-12 center">
-          <h2 class="word-rotator-title mb-sm">... Y  venden reconocidas marcas como</h2>
-          <hr class="tall">
-      </div>
-  </div>
-
-  <div class="row">
-      <div class="col-md-12">
+        <div class="col-md-12">
+            <h4>Distribuyen y venden marcas como:</h4>
           <div class="content-grid content-grid-dashed mt-xlg mb-lg">
               <div class="row content-grid-row">
 
               {# Defined in client_list.py #}
               {% for brand_item in BRAND_LIST %}
-                <div class="content-grid-item col-md-3 center">
+                <div class="content-grid-item col-md-2 center">
                     <img
                       class="img-responsive"
                       src="{% static brand_item.LOGO %}"
@@ -53,36 +46,10 @@
               </div>
             </div>
         </div>
-      </div>
+        
+        
   </div>
 
-  <section class="section section-default mb-none">
+</div>
 
-		<div class="row">
-			<div class="col-md-12 center">
-				<h2 class="mt-xl mb-none">Tenemos una vasta <strong>experiencia</strong> en las industrias de</h2>
-				<hr class="invisible">
-			</div>
-		</div>
 
-    <div class="container">
-  		<div class="row mb-xl">
-
-        {# Defined in client_list.py #}
-        {% for industry_item in INDUSTRY_LIST %}
-    			<div class="col-md-4">
-    				<div class="feature-box feature-box-style-6">
-    					<div class="feature-box-icon">
-    						<i class="fa {{ industry_item.ICON }} text-color-primary"></i>
-    					</div>
-    					<div class="feature-box-info">
-    						<h4 class="pt-xs"><strong class="semi-bold">{{ industry_item.NAME }}</strong></h4>
-    					</div>
-    				</div>
-    			</div>
-        {% endfor %}
-
-  		</div>
-    </div>
-
-	</section>
