@@ -6133,6 +6133,7 @@ section.timeline .timeline-box .owl-carousel {
 /* Counters */
 .counters .counter {
 	text-align: center;
+        margin: 15px 0px;
 }
 
 .counters .fa, .counters .icons {
