@@ -4540,6 +4540,10 @@ p.lead2 {
 .p-30{
     padding:30px 0!important;
 }
+.doted-border{
+    padding: 10px;
+    border: 1px dashed #7B7B7B;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
