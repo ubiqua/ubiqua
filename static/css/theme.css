@@ -4563,6 +4563,16 @@ i.icon-featured img {
     width: 44%;
     margin: 1.5% 1.5%;
 }
+section.section.orange {
+    background-color: #f46c22;
+}
+.bg-orange h2 {
+    color: #fff;
+}
+.bg-orange h4 {
+    color: #fff;
+}
+
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;

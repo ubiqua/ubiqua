@@ -31,61 +31,63 @@ page_description: Lorem Ipsum
         
         
     </div>
-    
-    <div class="col-md-12">
-        <hr class="tall">
-         <div class="title">
-            <h2>Nuestros <strong>valores son...</strong></h2>
-         </div>
-        <div class="col-md-6">
-            <div class="feature-box feature-box-primary">
-                <div class="feature-box-icon">
-                    <i class="fa fa-group"></i>
+</div>
+<section class="section bg-orange section-with-mockup mb-none p-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                 <div class="title">
+                    <h2>Nuestros <strong>valores son...</strong></h2>
+                 </div>
+                <div class="col-md-6">
+                    <div class="feature-box feature-box-primary">
+                        <div class="feature-box-icon bg-dark">
+                            <i class="fa fa-group"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="mb-sm">Empatía</h4>
+                            <p class="mb-lg">Nuestra filosofía nos lleva a ponernos en los zapatos de los demás como primera reacción.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-primary">
+                        <div class="feature-box-icon bg-dark">
+                            <i class="fa fa-refresh"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="mb-sm">Mejoras constantes</h4>
+                            <p class="mb-lg">Cuestionar el status quo para ser cada vez más efectivos y eficientes en lo que hacemos. </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-box-info">
-                    <h4 class="mb-sm">Empatía</h4>
-                    <p class="mb-lg">Nuestra filosofía nos lleva a ponernos en los zapatos de los demás como primera reacción.</p>
+                <div class="col-md-6">
+                    <div class="feature-box feature-box-primary">
+                        <div class="feature-box-icon bg-dark">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="mb-sm">Agregamos Valor</h4>
+                            <p class="mb-lg">Asegurarse que tus comportamientos aporten al beneficio de la empresa</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box-primary">
+                        <div class="feature-box-icon bg-dark">
+                            <i class="fa fa-thumbs-o-up"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="mb-sm">Confiabilidad</h4>
+                            <p class="mb-lg">Crear una reputación impecable en donde nuestra palabra es ley.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="feature-box feature-box-primary">
-                <div class="feature-box-icon">
-                    <i class="fa fa-refresh"></i>
-                </div>
-                <div class="feature-box-info">
-                    <h4 class="mb-sm">Mejoras constantes</h4>
-                    <p class="mb-lg">Cuestionar el status quo para ser cada vez más efectivos y eficientes en lo que hacemos. </p>
-                </div>
+
+
+
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="feature-box feature-box-primary">
-                <div class="feature-box-icon">
-                    <i class="fa fa-plus"></i>
-                </div>
-                <div class="feature-box-info">
-                    <h4 class="mb-sm">Agregamos Valor</h4>
-                    <p class="mb-lg">Asegurarse que tus comportamientos aporten al beneficio de la empresa</p>
-                </div>
-            </div>
-            <div class="feature-box feature-box-primary">
-                <div class="feature-box-icon">
-                    <i class="fa fa-thumbs-o-up"></i>
-                </div>
-                <div class="feature-box-info">
-                    <h4 class="mb-sm">Confiabilidad</h4>
-                    <p class="mb-lg">Crear una reputación impecable en donde nuestra palabra es ley.</p>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        
     </div>
 
-</div>
+</section>
 
-  {% include "index/hero.html" %}
 
 <br>
 <div class="container">
@@ -95,17 +97,17 @@ page_description: Lorem Ipsum
                 <h2>Conoce al <strong> Equipo de Ubiqua</strong></h2>
               </div>
             <div class="lightbox mb-lg" data-plugin-options="{&quot;delegate&quot;: &quot;a&quot;, &quot;type&quot;: &quot;image&quot;, &quot;gallery&quot;: {&quot;enabled&quot;: true}}">
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua1.jpg' %}" title="Project 1">
-                    <img class="img-responsive" src="http://placehold.it/350x350"  alt="Project">
+                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua1.jpg' %}" title="Cena Navidad 2015">
+                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_1.jpg' %}"  alt="Project">
                 </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua2.jpg' %}" title="Project 1">
-                    <img class="img-responsive" src="http://placehold.it/350x350"  alt="Project">
+                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua2.jpg' %}" title="Bowling 2015">
+                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_2.jpg' %}"  alt="Project">
                 </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua3.jpg' %}" title="Project 1">
-                    <img class="img-responsive" src="http://placehold.it/350x350"  alt="Project">
+                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua3.jpg' %}" title="Socios Ubiqua">
+                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_3.jpg' %}"  alt="Project">
                 </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua4.jpg' %}" title="Project 1">
-                    <img class="img-responsive" src="http://placehold.it/350x350"  alt="Project">
+                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua4.jpg' %}" title="Primera Imagen Ubiqua">
+                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_4.jpg' %}"  alt="Project">
                 </a>
             </div>
         </div>
@@ -131,8 +133,16 @@ page_description: Lorem Ipsum
                             <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
                         </div>
                         <div class="col-md-6">
-                            <label>Dirección email *</label>
+                            <label>Teléfono</label>
                             <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>Dirección email *</label>
+                            <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
                         </div>
                     </div>
                 </div>
@@ -147,7 +157,7 @@ page_description: Lorem Ipsum
                  <div class="row">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label>Observaciones</label>
+                            <label>Comentarios adicionales</label>
                             <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
                         </div>
                     </div>
