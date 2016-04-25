@@ -4559,6 +4559,10 @@ i.icon-featured img {
     width: 40%;
     margin-top: -15px;
 }
+.nosotros-gallery {
+    width: 44%;
+    margin: 1.5% 1.5%;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
