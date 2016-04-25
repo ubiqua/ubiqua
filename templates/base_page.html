@@ -76,6 +76,10 @@
                 </section>
 
 				{% block content %}{% endblock %}
+                
+                {% if ca_footer == 'yes' %}
+            
+                
                 <section class="call-to-action call-to-action-default with-button-arrow call-to-action-in-footer">
                     <div class="container">
                         <div class="row">
@@ -91,7 +95,9 @@
                         </div>
                     </div>
                 </section>
+                
                 <br><br>
+                {% endif %}
 
 
 			</div>
