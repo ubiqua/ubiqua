@@ -4572,7 +4572,24 @@ section.section.orange {
 .bg-orange h4 {
     color: #fff;
 }
+.feature-box-icon.circle {
+    background-color: #f46c22!important;
+    margin-top: -15px;
+}
+.feature-box-icon.circle i {
+    color: #fff!important;
+    font-size: 34px!important;
+    line-height: 74px;
+}
+.feature-box.feature-box-style-5 {
+    margin-bottom: 55px;
+}
+.product-icon {
+    font-size:130px;
+    color: #fff;
+    margin: 15px;
 
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;

@@ -4114,8 +4114,8 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 
 /* Featured Boxes */
 .featured-boxes .featured-box {
-	margin-bottom: 30px;
-	margin-top: 45px;
+	    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Effects */
