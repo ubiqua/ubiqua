@@ -2322,12 +2322,11 @@ section.section-custom-map-2 section.section {
 }
 
 .home-concept .process-image {
-	background: transparent url(../img/home-concept-item.png) no-repeat 0 0;
-	width: 160px;
-	margin: 135px auto 0 auto;
-	padding-bottom: 50px;
-	position: relative;
-	z-index: 1;
+	    background: transparent url(../img/home-concept-item.png) no-repeat 29.5px 0;
+    width: 220px;
+    margin: 135px auto 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .home-concept .process-image img {
@@ -4590,6 +4589,9 @@ section.section.orange {
     margin: 15px;
 
 }
+.poc-func{
+    margin-top:-60px;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
@@ -4652,6 +4654,9 @@ section.section.orange {
         border: none;
         margin: 0;
         padding: 0 15px!important;
+    }
+    .poc-func{
+        margin-top:0px;
     }
     
 }

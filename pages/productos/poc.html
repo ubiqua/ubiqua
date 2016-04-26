@@ -3,6 +3,7 @@ title: POC - Catálogo Digital
 subtitle: Aumente la velocidad del procesamiento de órdenes de compra.
 page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
+ca_footer: yes
 
 {% extends "base_page.html" %}
 {% block content %}
@@ -81,7 +82,7 @@ page_description: Lorem Ipsum
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                 <div class="title">
+                 <div class="title center">
                     <h2>Funcionamiento de <strong>Ubiqua POC</strong></h2>
                     <p class="lead">Procesa tus órdenes de compra de manera automática y sin errores</p>
                  </div>
@@ -115,11 +116,11 @@ page_description: Lorem Ipsum
 
 </section>
 
-<section class="section bg-white section-default mt-none mb-xl">
+<section class="section bg-white section-default mt-none">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                 <div class="title">
+                 <div class="title center">
                     <h2>Funcionalidades de <strong>Ubiqua POC</strong></h2>
                     <p class="lead">Procesa tus órdenes de compra de manera automática y sin errores</p>
                  </div>
@@ -134,34 +135,30 @@ page_description: Lorem Ipsum
 
                 <div class="col-md-3">
                     <div class="process-image" data-appear-animation="bounceIn">
-                        <img src="http://placehold.it/350x350" alt="" />
+                        <img src="{% static '/img/productos/poc/icon1.jpg' %}" alt="" />
                         <h4 class="mt-xl">Identificador de pedidos</h4>
                         <p>Tan pronto recibes una orden por correo, nosotros la identificamos y comenzamos su procesamiento sin que nadie descargue el archivo previamente.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="200">
-                        <img src="http://placehold.it/350x350" alt="" />
+                        <img src="{% static '/img/productos/poc/icon2.jpg' %}" alt="" />
                         <h4 class="mt-xl">Transformación de órdenes a pedidos</h4>
                         <p>Convertimos las órdenes de compra que envían los clientes por correo a pedidos en tu sistema sin necesidad de digitar ninguna línea manualmente</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 poc-func">
                     <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="400">
-                        <img src="http://placehold.it/350x350" alt="" />
+                        <img src="{% static '/img/productos/poc/icon3.jpg' %}" alt="" />
                         <h4 class="mt-xl">Localización de Errores</h4>
                         <p>Localización de errores en sus ordenes de compra</p>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="project-image">
-                        <div id="fcSlideshow" class="fc-slideshow">
-                            <ul class="fc-slides">
-                                <li><img class="img-responsive" src="http://placehold.it/350x350" alt="" /></li>
-                            </ul>
-                        </div>
+                    <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="400">
+                        <img src="{% static '/img/productos/poc/icon4.jpg' %}" alt="" />
                         <h4 class="mt-xl">Notificación de Errores</h4>
-                        <p>Notificamos a los  encargados en tu empresa solucionar los errores de las órdenes de compras. </p>
+                        <p>Notificamos a los  encargados en tu empresa solucionar los errores de las órdenes de compras.</p>
                     </div>
                 </div>
             </div>
