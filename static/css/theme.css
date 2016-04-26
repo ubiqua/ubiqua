@@ -4412,7 +4412,7 @@ p.lead.dark.medium {
     background-position: 0% -76.9083px;   
 }
 .owl-item img {
-    max-width: 350px;
+  /*  max-width: 350px;*/
 }
 .img-thumbnail.circle {
     margin-bottom: 20px;
@@ -4591,6 +4591,59 @@ section.section.orange {
 }
 .poc-func{
     margin-top:-60px;
+}
+.owl-carousel.vertical .owl-item {
+    /* color: #fff; */
+    float: none;
+    margin-bottom: 5px;
+}
+
+.ave-product {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+
+}
+.ave-product-desc {
+    width: 45%;
+    float: right;
+
+}
+i.ave-product-icon {
+    background-color: #f46c22;
+    color: #f4f4f4;
+    font-size: 35px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+}
+.ave-product-desc i {
+    text-align: center;
+    margin: 5% 25%;
+}
+.owl-item.active {
+    margin-bottom: 0px;
+}
+.owl-dots {
+    margin-top: 15px;
+}
+.border-none{
+    border:none!important;
+}
+i.ave-product-icon2 {
+    float: left;
+    height: 70px;
+    width: 70px;
+    background-color: #f46c22;
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 28px;
 }
 @media (max-width: 1200px) {
     .home-intro p {

@@ -2213,7 +2213,7 @@ ul.sitemap.list ul {
 
 /* Owl Carousel */
 .owl-carousel {
-	margin-bottom: 20px;
+	margin-bottom: -10px;
 }
 
 .owl-carousel .thumbnail {
@@ -2239,7 +2239,7 @@ ul.sitemap.list ul {
 }
 
 .owl-carousel .owl-nav .owl-prev {
-	left: -5px;
+	left: -50px;
 }
 
 .owl-carousel .owl-nav .owl-prev:before {
@@ -2251,7 +2251,7 @@ ul.sitemap.list ul {
 }
 
 .owl-carousel .owl-nav .owl-next {
-	right: -5px;
+	right: -50px;
 }
 
 .owl-carousel .owl-nav .owl-next:before {

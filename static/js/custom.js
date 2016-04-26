@@ -67,8 +67,9 @@ Theme Version:	4.5.1
 		.owlCarousel({
 			items: 1,
 			margin: 10,
-			nav: false,
-			dots: false
+			nav: true,
+			dots: true,
+            navText: []
 		})
 		.on('changed.owl.carousel', function(e) {
 			if (!flag) {
@@ -81,10 +82,12 @@ Theme Version:	4.5.1
 	$thumbGalleryThumbs2
 		.owlCarousel({
 			margin: 15,
-			items: 4,
+			items: 3,
 			nav: false,
 			center: true,
-			dots: true
+			dots: true,
+        
+
 		})
 		.on('click', '.owl-item', function() {
 			$thumbGalleryDetail2.trigger('to.owl.carousel', [$(this).index(), duration, true]);
@@ -94,6 +97,49 @@ Theme Version:	4.5.1
 			if (!flag) {
 				flag = true;
 				$thumbGalleryDetail2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+				flag = false;
+			}
+		});
+    
+    var $thumbGalleryDetail3 = $('#thumbGalleryDetail3'),
+		$thumbGalleryThumbs3 = $('#thumbGalleryThumbs3'),
+		flag = false,
+		duration = 300;
+
+	$thumbGalleryDetail3
+		.owlCarousel({
+			items: 1,
+			margin: 10,
+			nav: true,
+			dots: true,
+            navText: []
+		})
+		.on('changed.owl.carousel', function(e) {
+			if (!flag) {
+				flag = true;
+				$thumbGalleryThumbs2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+				flag = false;
+			}
+		});
+
+	$thumbGalleryThumbs3
+		.owlCarousel({
+			margin: 15,
+			items: 3,
+			nav: false,
+			center: true,
+			dots: true,
+        
+
+		})
+		.on('click', '.owl-item', function() {
+			$thumbGalleryDetail3.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+
+		})
+		.on('changed.owl.carousel', function(e) {
+			if (!flag) {
+				flag = true;
+				$thumbGalleryDetail3.trigger('to.owl.carousel', [e.item.index, duration, true]);
 				flag = false;
 			}
 		});

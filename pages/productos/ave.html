@@ -1,226 +1,174 @@
 page_title: AVE - Catálogos productos
-title: AVE - Catálogo Digital
-subtitle: Aumente la eficiencia y efectividad de sus vendedores.
+title: AVE: Aplicacion de Ventas Móvil
+subtitle: Dale a tu vendedor las herramientas y la motivación para vender más. 
 page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
-ca_footer: yes
 
 {% extends "base_page.html" %}
 {% block content %}
-<div class="container mb-xlg">
-    <div class="row">
-        <div class="col-md-12 center">
-            <h2 class="word-rotator-title mb-sm">Más eficiencia en tus procesos de ventas con <strong>Ubiqua AVE</strong></h2>
-            <p class="lead">Unifica toda la información de tus productos en un sólo lugar.</p>
+<div class="row mb-none">
+    <div class="col-md-12 center">
+        <h2 class="word-rotator-title mb-sm">Diseño y desarrollo de <strong>software empresarial</strong> </h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-            <hr class="tall">
-        </div>
+        <hr class="tall">
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="title">
-                <h2>Qué es Ubiqua<strong> AVE</strong>?</h2>
-                <span>Catálogo Digital de productos en tiempo real.</span>
-            </div>
-            <p>Ubiqua AVE es un catálogo de productos para que los vendedores o mercaderistas de las empresas puedan consultar el listado de clientes, productos, ver el inventario, listas de precios actualizados de sus productos, enviar pedidos y cotizaciones desde la calle, todo en tiempo real y sin retrasos de ningún tipo entre los diferentes procesos de venta.</p>
-            <p>Comercializamos Ubiqua AVE vendiendo el software como un servicio. Nos encargamos de conectarnos con su sistema ERP o base de datos de empresa, capacitamos a los usuarios de la aplicación y hacemos el soporte técnico directamente al usuario de forma rápida y eficiente.</p>
-
-        </div>
-        <div class="col-md-8">
-
-            <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://player.vimeo.com/video/79888716?color=F27735" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-
-        </div>
-    </div>
-
-
 </div>
+<section class="section section-default bg-white section-with-mockup mt-none mb-none border-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="title">
+                    <h1>Funcionalidades y beneficios de <strong>Ubiqua AVE</strong></h1>
+                    
+                      <p class="lead">Equipa a tu vendedor con las mejores herramientas para atender a su cliente</p>
+                </div>
+                
+                <p>Clientes contentos compran más. Ubiqua AVE tiene todo lo que un vendedor necesita para hacer el proceso de venta lo más rápido y cómodo posible. Tus clientes quedarán sorprendidos con la eficiencia de tu vendedor. </p>
+                <br>
+                <a href="{% url '/productos/implementacion.html' %}" data-hash="" class="mb-xl btn btn-md btn-primary mr-md appear-animation fadeInDown appear-animation-visible">Contacte con nosotros para una <strong>Prueba Gratis</strong></a>
+            
+            
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <div class="thumb-gallery">
+                    <div class="owl-carousel owl-theme manual thumb-gallery-detail show-nav" id="thumbGalleryDetail2">
+                        <div>
 
-<section class="section section-default section-with-mockup mb-none">
-  <div class="container">
-    <div class="row mb-xlg">
-        <div class="col-md-12">
-            <div class="title">
-                <h2>Amplia gama de <strong>Funcionalidades y Beneficios</strong></h2>
-                  <span>Nuestro sistema AVE abarca todos los procesos de su departamento de ventas</span>
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-send ave-product-icon"></i>
+                                <hr>
+                                <h4>Envío de cotizaciones y pedidos</h4>
+                                <p>Envío de cotizaciones personalizadas por medio de correo electrónico de forma inmediata y al frente del cliente.</p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-book ave-product-icon"></i>
+                                <hr>
+                                <h4>Catalogo digital con Fotos </h4>
+                                <p>Información completa de todos sus productos en tiempo real. Incluye precios actualizados por cliente, imágenes e información detallada de cada producto.</p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-briefcase ave-product-icon"></i>
+                                <hr>
+                                <h4>Ruta de Clientes</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-dollar ave-product-icon"></i>
+                                <hr>
+                                <h4>Información de Crédito, Saldo y Cobros</h4>
+                                <p>El vendedor comunica al cliente su saldo hasta la fecha y le notifica en caso de que esté moroso o próximo a llegar a su límite de crédito.</p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-cubes ave-product-icon"></i>
+                                <hr>
+                                <h4>Inventario de producto en vivo</h4>
+                                <p>Consulta en tiempo real la disponibilidad de un producto, evitando posibles erorres y cambios en los pedidos.</p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="ave-product">
+                                <img alt="Project Image" src="{% static '/img/productos/ave/cel.png' %}" class="img-responsive">                                                            
+                            </div>
+                            <div class="ave-product-desc">
+                                <i class="fa fa-info ave-product-icon"></i>
+                                <hr>
+                                <h4>Status de Pedidos</h4>
+                                <p>Acceso a todos los pedidos y cotizaciones hechos anteriormente con la aplicación para conocer su estado y reutilizarlos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-          <div class="feature-box-icon">
-            <i class="fa fa-clock-o"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Catálogo de Productos</h4>
-            <p class="mb-lg">Imformación completa de todos sus productos en tiempo real. Incluye precios actualizados por cliente, imágenes e información detallada de cada producto.</p>
-          </div>
-        </div>
-        <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-          <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Gestión Pedidos</h4>
-            <p class="mb-lg">Envío de pedidos al sistema de forma inmediata y sin intermediarios. El sitema permite la reutilización de pedidos para un máximo ahorro de tiempo.</p>
-          </div>
-        </div>
-
-        <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-        <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Búsqueda de Productos</h4>
-            <p class="mb-lg">Filtre sus productos por código, nombre o marca sin hacer esperar al cliente. Olvídese de buscar entre cientos de páginas en un catálogo tradicional.</p>
-          </div>
-        </div>
-
-        <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-        <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Historial de Pedidos</h4>
-            <p class="mb-lg">Acceso a todos los pedidos y cotizaciones hechos anteriormente con la aplicación para utilizarlos como herramienta de ventas</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-          <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-          <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Inventario en línea</h4>
-            <p class="mb-lg">Consulta en tiempo real la disponibilidad de un producto, evitando posibles erorres y cambios en los  pedidos.</p>
-          </div>
-        </div>
-          <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-        <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Descuentos y bonificaciones</h4>
-            <p class="mb-lg">Parte del trabajo del vendedor es negociar con el cliente. Para esto, muchas empresas le permiten a sus vendedores ofrecer regalías o bonificaciones.</p>
-          </div>
-        </div>
-          <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-          <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Envío de Cotizaciones</h4>
-            <p class="mb-lg">Envío de cotizaciones personalizadas por medio de correo electrónico de forma inmediata y al frente del cliente.</p>
-          </div>
-        </div>
-          <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-        <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Informacion de contable</h4>
-            <p class="mb-lg">El vendedor comunica al cliente su saldo hasta la fecha y le notifica en caso de que esté moroso o próximo a llegar a su límite de crédito.</p>
-          </div>
-        </div>
-
-          <div class="feature-box feature-box-style-2 reverse mb-xl appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
-        <div class="feature-box-icon">
-            <i class="fa fa-ticket"></i>
-          </div>
-          <div class="feature-box-info">
-            <h4 class="mb-sm">Funcionamiento Offline</h4>
-            <p class="mb-lg">En caso de pérdida de señal de datos, los pedidos y solicitudes se guardan en el dispositivo local a la espera de tener conexióna internet.</p>
-          </div>
-        </div>
-
-
-
-      </div>
-        <div class="col-md-4 center">
-          <div class="thumb-gallery">
-                <div class="owl-carousel owl-theme manual thumb-gallery-detail show-nav-hover" id="thumbGalleryDetail">
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail">
-                            <img alt="Project Image" src="http://placehold.it/300x500" class="img-responsive">
-                        </span>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme manual thumb-gallery-thumbs mt" id="thumbGalleryThumbs">
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                    <div>
-                        <span class="img-thumbnail cur-pointer">
-                            <img alt="Project Image" src="http://placehold.it/150x150" class="img-responsive">
-                        </span>
-                    </div>
-                </div>
-            </div>
-      </div>
-    </div>
-  </div>
 </section>
-<section class="section section-primary mt-none mb-xlg">
+
+
+<section style="padding:90px 0px;" class="section section-default section-with-mockup mb-none mt-none bg_producto section-text-light">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-7">
+                <div class="thumb-gallery">
+                    <div class="owl-carousel owl-theme manual thumb-gallery-detail show-nav" id="thumbGalleryDetail3">
+                        <div>
+                                <i class="fa fa-send ave-product-icon2"></i>
+                                <h4>Comunica información crucial de venta</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <br>
+                                <img alt="Project Image" src="{% static '/img/productos/ave/tablet.png' %}" class="img-responsive">                                                            
+                        </div>
+                        <div>
+                                <i class="fa fa-send ave-product-icon2"></i>
+                                <h4>Despliega las metas de venta </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <br>
+                                <img alt="Project Image" src="{% static '/img/productos/ave/tablet.png' %}" class="img-responsive">                                                            
+                        </div>
+                        <div>
+                                <i class="fa fa-send ave-product-icon2"></i>
+                                <h4>Crea torneos con incentivos </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <br>
+                                <img alt="Project Image" src="{% static '/img/productos/ave/tablet.png' %}" class="img-responsive">                                                            
+                        </div>
+                      
+                        
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="title">
+                    <h1>Motiva a tus vendedores a <strong>vender más</strong></h1>
+                    <p class="lead"></p>
+                </div>
+                
+                <p>Es dificil monitorear el trabajo de tus vendedores que están todo el dia en la calle. Incentivalos a vender lo más posible con una comunicación eficiente, monitoreo de metas, y mecanismos de torneo!</p>
+                <br>
+                <a href="{% url '/productos/implementacion.html' %}" data-hash="" class="mb-xl btn btn-md btn-primary mr-md appear-animation fadeInDown appear-animation-visible">Contacte con nosotros para una <strong>Prueba Gratis</strong></a>
+            
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section section-primary mt-none mb-none ">
     <div class="container">
         <div class="row">
             <div class="counters counters-text-light">
@@ -252,79 +200,63 @@ ca_footer: yes
         </div>
     </div>
 </section>
-
-<div class="container mb-xlg">
-
+<div class="container mt-xlg mb-lg">
+    <br>
     <div class="row">
-        <div class="col-md-6">
-            <div class="title">
-                <h2><strong>Implementación y sosporte</strong></h2>
-                <span>Nosotros nos encargamos de la integración con su ERP</span>
-            </div>
-            <p>Ofrecemos un servicio completo donde No te tienes que preocupar por nada. Tenemos el personal y la infraestructura necesaria para que no seamos un peso para tu empresa si no un aliado estratégico.</p>
-            <p>Ponemos en funcionamiento nuestro sistema integrándolo a su ERP o sistema de base de datos existente. Por otra parte, nuestro servicio integral incluye la capacitación de los usuaios de la plataforma y el soporte directo con los usuarios.</p>
-            <a href="{% url '/productos/implementacion.html' %}" data-hash="" class="mb-xl btn btn-md btn-primary mr-md appear-animation fadeInDown appear-animation-visible" data-appear-animation="fadeInDown" data-appear-animation-delay="300" style="animation-delay: 300ms;">Conozca nuestro proceso de implementación</a>
-
+        <div class="title">
+            <h2>Otras <strong> características  importantes</strong></h2>
+            <p>Ubiqua POC se encarga de facturar las órdenes de compra de las cadenas más grandes de supermercados y tiendas en cuestión de segundos.</p>
         </div>
-         <div class="col-md-6 result">
-            <h5>Opiniones de nuestros clientes de AVE</h5>
-            <small>Testimonios reales de nuestros usuarios y clientes</small>
-            <br><br>
-            <div class="owl-carousel owl-theme mb-none" data-plugin-options='{"items": 1}'>
-                <div>
-                    <div class="col-md-12">
-                        <div class="testimonial testimonial-style-3">
-                            <blockquote>
-                                <p>Quiero darles las gracias a ustedes por lo que han hecho. Desde que uso las tablets he pegado todas mis cuotas. La herramienta Ubiqua ha sido parte de mi éxito laboral. Me ha ayudado a mejorar la calidad de vida para mi familia.</p>
-                            </blockquote>
-                            <div class="testimonial-arrow-down"></div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-author-thumbnail">
-                                    <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
-                                </div>
-                                <p><strong>Gabriel Samudo</strong><span>Agencia Feduro</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col-md-12">
-                        <div class="testimonial testimonial-style-3">
-                            <blockquote>
-                                <p>Su servicio al cliente es increíble. Nunca había visto una compañía de tecnología que brinde tanto apoyo.</p>
-                            </blockquote>
-                            <div class="testimonial-arrow-down"></div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-author-thumbnail">
-                                    <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
-                                </div>
-                                <p><strong>Ricardo Mouynes</strong><span>Airco</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col-md-12">
-                        <div class="testimonial testimonial-style-3">
-                            <blockquote>
-                                <p>Soporte trabaja muy bien. Es un equipo eficiente; atiende rápido las solicitudes. Los felicito</p>
-                            </blockquote>
-                            <div class="testimonial-arrow-down"></div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-author-thumbnail">
-                                    <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
-                                </div>
-                                <p><strong>Victor Medina</strong><span>Farmacias Arrocha</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <hr>
+       <div class="col-md-3  center">
+            <img class="img-responsiveappear-animation circle icon " src="{% static '/img/productos/ave/responsive.png' %}" alt="layout styles" data-appear-animation="fadeInLeft">
+            <div class="title">
+                <h4>Multiplataforma</h4>
+             </div>
+            <p class="lead2">
+                Vende cuando sea, donde sea. Tus vendedores pueden vender desde su celular, computadora, o tablet. 
+            </p>
+             <br>
+        </div>
+       
+
+        <div class="col-md-3 center">
+            <img class="img-responsive appear-animation circle icon" src="{% static '/img/productos/ave/offline.png' %}" alt="style switcher" data-appear-animation="fadeInRight">
+            <div class="title">
+                <h4>Modo offline</h4>
             </div>
+            <p class="lead2">
+               No dejes que mala señal afecte tus ventas. AVE funciona sin necesidad de internet. 
+            </p>
+
+             <br>
+        </div>
+        <div class="col-md-3  center">
+            <img class="img-responsiveappear-animation circle icon " src="{% static '/img/productos/ave/seg.png' %}" alt="layout styles" data-appear-animation="fadeInLeft">
+            <div class="title">
+                <h4>Seguridad</h4>
+             </div>
+            <p class="lead2">
+                Cada vendedor tiene su cuenta personalizada y segura 
+            </p>
+             <br>
+        </div>
+       
+
+        <div class="col-md-3 center">
+            <img class="img-responsive appear-animation circle icon" src="{% static '/img/icon/refresh.png' %}" alt="style switcher" data-appear-animation="fadeInRight">
+            <div class="title">
+                <h4>Sincronización con  ERP</h4>
+            </div>
+            <p class="lead2">
+                Flexibilidad de sincronización con cualquier sistema ERP </p>
+
+             <br>
         </div>
     </div>
 
 
 </div>
 
-
+{% include "index/clients_quotes.html" %}
 {% endblock %}
