@@ -93,23 +93,43 @@ page_description: Lorem Ipsum
 <div class="container">
     <div class="row mt-xlg mb-xlg">
         <div class="col-md-6">
-             <div class="title">
-                <h2>Conoce al <strong> Equipo de Ubiqua</strong></h2>
-              </div>
-            <div class="lightbox mb-lg" data-plugin-options="{&quot;delegate&quot;: &quot;a&quot;, &quot;type&quot;: &quot;image&quot;, &quot;gallery&quot;: {&quot;enabled&quot;: true}}">
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua1.jpg' %}" title="Cena Navidad 2015">
-                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_1.jpg' %}"  alt="Project">
-                </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua2.jpg' %}" title="Bowling 2015">
-                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_2.jpg' %}"  alt="Project">
-                </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua3.jpg' %}" title="Socios Ubiqua">
-                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_3.jpg' %}"  alt="Project">
-                </a>
-                <a class="img-thumbnail mb-xs mr-xs nosotros-gallery" href="{% static '/img/nosotros/ubiqua4.jpg' %}" title="Primera Imagen Ubiqua">
-                    <img class="img-responsive" src="{% static '/img/nosotros/ubiqua_mini_4.jpg' %}"  alt="Project">
-                </a>
+             <div class="featured-box featured-box-primary">
+            <div class="box-content">
+                <h4 class="text-uppercase">Conoce al Equipo de Ubiqua</h4>
+                <ul class="thumbnail-gallery" data-plugin-lightbox="" data-plugin-options="{&quot;delegate&quot;: &quot;a&quot;, &quot;type&quot;: &quot;image&quot;, &quot;gallery&quot;: {&quot;enabled&quot;: true}}">
+                    <li>
+                        <a title="Navidad 2015" href="{% static '/img/nosotros/ubiqua1.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_1.jpg' %}" width="220" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Bowling" href="{% static '/img/nosotros/ubiqua2.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_2.jpg' %}" width="220" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Socios Ubiqua" href="{% static '/img/nosotros/ubiqua3.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_3.jpg' %}" width="220" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Primera Imagen de empresa" href="{% static '/img/nosotros/ubiqua4.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_4.jpg' %}" width="220" alt="">
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
+        </div>
+            
         </div>
         <div class="col-md-6">
 
