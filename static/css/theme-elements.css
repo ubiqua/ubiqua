@@ -7931,7 +7931,7 @@ ul.history li .featured-box .box-content {
 	border-radius: 4px;
 }
 .feature-box-icon.bg-dark {
-       background-color: #ffffff!important;
+       background-color: #f46c22!important;
     height: 60px;
     width: 60px;
     line-height: 60px!important;
@@ -7939,5 +7939,8 @@ ul.history li .featured-box .box-content {
     margin-top: 5px;
 }
 .feature-box-icon.bg-dark i {
-        color: #252525!important;
+    color: #ffffff!important;
+}
+.feature-box.feature-box-primary {
+    min-height: 75px;
 }
