@@ -25,18 +25,6 @@
 
                                         </li>
                                         <li class="dropdown
-                                                   {% if_current_page '/nosotros/historia.html' 'active' %}
-                                                   {% if_current_page '/nosotros/quienes_somos.html' 'active' %}
-                                                   ">
-                                            <a class="dropdown-toggle" href="#">
-                                                Nosotros
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="{% url '/nosotros/quienes_somos.html' %}">Quiénes Somos</a></li>
-                                                <li><a href="{% url '/nosotros/historia.html' %}">Historia</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown
                                                    {% if_current_page '/productos/implementacion.html' 'active' %}
                                                    {% if_current_page '/productos/ave.html' 'active' %}
                                                    ">
@@ -44,26 +32,27 @@
                                                 Productos
                                             </a>
                                             <ul class="dropdown-menu">
+                                                <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
                                                 <li><a href="{% url '/productos/ave.html' %}">AVE - Catálogo Digital</a></li>
                                                 <li><a href="{% url '/productos/poc.html' %}">POC - Procesamiento de Datos</a></li>
-                                                <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
+                                                
                                             </ul>
 
                                         </li>
-                                        <li class="dropdown {% if_current_page '/clientes.html' 'active' %}">
+                                         <li class="dropdown {% if_current_page '/clientes.html' 'active' %}">
                                             <a class="" href="{% url '/clientes.html' %}">
                                                 Clientes
                                             </a>
                                         </li>
                                         <li class="
-                                                   {% if_current_page '/blog.html' 'active' %}
-                                                   {% if_current_page '/blog/demo_post.html' 'active' %}
+                                                   {% if_current_page '/nosotros/historia.html' 'active' %}
+                                                   {% if_current_page '/nosotros/quienes_somos.html' 'active' %}
                                                    ">
-                                            <a class="" href="{% url '/blog.html' %}">
-                                                Blog
+                                            <a class="" href="{% url '/nosotros/quienes_somos.html' %}">
+                                                Nosotros
                                             </a>
-
                                         </li>
+
                                         <li class=" {% if_current_page '/contacto.html' 'active' %}">
                                             <a class="" href="{% url '/contacto.html' %}">
                                                 Contáctenos
