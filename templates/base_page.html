@@ -59,7 +59,7 @@
 		<div class="body">
 
 			{% include "fragments/top_header.html" %}
-
+            {% block title %}
 			<div role="main" class="main">
                 <section class="page-header page-header-custom-background parallax" data-stellar-background-ratio="0.5" style="background-image: url({% static '/img/productos/imp/intro.jpg' %});">
                     <div class="container">
@@ -74,6 +74,7 @@
                         </div>
                     </div>
                 </section>
+                {% endblock %}
 
 				{% block content %}{% endblock %}
                 

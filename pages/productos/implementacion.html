@@ -5,6 +5,24 @@ page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
 
 {% extends "base_page.html" %}
+
+{% block title %}
+
+<section class="mb-xlg page-header page-header-custom-background parallax" data-stellar-background-ratio="0.5" style="background-image: url({% static '/img/implementacion/background.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <h1>Implementación de Soluciones<span>La clave del éxito de un proyecto tecnológico es su implementación.</span></h1>
+                <br><br>
+                <p>Nosotros tenemos al mejor equipo de gerentes de proyecto y programadores dedicados a que las implementaciones sean efectivas, seguras y de la mano con nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="row mb-none">
@@ -19,7 +37,7 @@ page_description: Lorem Ipsum
 <section class="section section-default bg-white section-with-mockup mt-none mb-none border-none">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-offset-1" style="margin-top:-40px;">
+            <div class="col-md-5 col-md-offset-1" >
                 <h4 class="featured-orange">La sincronización puede hacerse de 2 maneras:</h4>
                 <h4>1. Directamente con el sistema ERP del cliente</h4>
                 <p>Somos  flexibles con el tipo de ERP al que nos conectamos. Tenemos una basta experiencia con distintos sistemas.</p>
