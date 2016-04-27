@@ -1,42 +1,46 @@
-<section class="section section-default  mb-none mt-none bg-white" >
+<section class="section section-default  mb-none pb-none" style="margin-top:220px;" >
     <div class="container">
         <div class="row mb-md">
             <div class="col-md-12">
                 <div class="title">
-                    <h2>Resultados de nuestra plataforma de <strong>Servicios al Cliente</strong></h2>
+                    <h2>Resultados de nuestro <strong>Servicios al Cliente</strong></h2>
                       <span>Nuestros <a href="{% url '/clientes.html' %}">clientes satisfechos</a> son nuestra mejor carta de presentación.</span>
                 </div>
             </div>
         </div>
         
         <div class="row mb-xlg">
-            <div class="col-md-3 center result">
+            <div class="col-md-3 center result with-borders">
                 <h5>Calificación de servicio</h5>
                 <small>Calificación de nuestro servicio<br> en la última encuesta realizada.</small>
-                <br><br>
-                <div class="circular-bar">
-                    <div class="circular-bar-chart" data-percent="96" data-plugin-options='{"size": 200, "lineWidth": 17, "lineCap": "square", "scaleColor": "#999", "barColor": "#f57c3a"}'>
-                        <strong>96%</strong>
+                <hr>
+                <div class="counters">
+                    <div class="counter  counter-primary big">
+                        <i class="fa fa-check-circle"></i>
+                        <strong data-to="96" data-append="%"></strong>
                         <label>Efectividad</label>
                     </div>
                 </div>
+
+
             </div>
             <div class="col-md-3 center result">
                 <h5>Tiempo de Respuesta</h5>
                 <small>Nuestro tiempo de respuesta promedio<br> a una solicitud de soporte</small>
-                <br><br>
-                <div class="circular-bar">
-                    <div class="circular-bar-chart" data-percent="33" data-plugin-options='{"size": 200, "lineWidth": 17, "lineCap": "square", "scaleColor": "#999", "barColor": "#f57c3a"}'>
-                        <strong>20</strong>
-                        <label>Minutos</label>
+                <hr>
+                <div class="counters">
+                    <div class="counter counter-primary big">
+                        <i class="fa fa-history"></i>
+                        <strong data-to="20" data-append=""></strong>
+                        <label>minutos</label>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-md-6 result">
+            <div class="col-md-6 result bg-gray-light">
                 <h5>Opiniones de nuestros clientes</h5>
-                <small>Testimonios reales de nuestros usuarios<br> y clientes</small>
+                <small>Testimonios reales de nuestros usuarios y clientes</small>
                 <br><br>
                 <div class="owl-carousel owl-theme mb-none" data-plugin-options='{"items": 1}'>
                      <div>
@@ -48,7 +52,7 @@
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">
                                     <div class="testimonial-author-thumbnail">
-                                        <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
+                                        <img src="{% static 'img/testimonios/arrocha.jpg' %}" class="img-responsive img-circle" alt="">
                                     </div>
                                     <p><strong>Victor Medina</strong><span>Farmacias Arrocha</span></p>
                                 </div>
@@ -64,7 +68,7 @@
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">
                                     <div class="testimonial-author-thumbnail">
-                                        <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
+                                        <img src="{% static 'img/testimonios/airco.jpg' %}" class="img-responsive img-circle" alt="">
                                     </div>
                                     <p><strong>Ricardo Mouynes</strong><span>Airco</span></p>
                                 </div>
@@ -80,7 +84,7 @@
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">
                                     <div class="testimonial-author-thumbnail">
-                                        <img src="http://placehold.it/150x150" class="img-responsive img-circle" alt="">
+                                        <img src="{% static 'img/testimonios/feduro.jpg' %}" class="img-responsive img-circle" alt="">
                                     </div>
                                     <p><strong>Gabriel Samudo</strong><span>Agencia Feduro</span></p>
                                 </div>
@@ -90,8 +94,9 @@
                    
                    
                 </div>
-						</div>
+				</div>
 
         </div>
+    </div>
         
 </section>

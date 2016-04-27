@@ -4338,6 +4338,16 @@ a.call-link {
     max-width: 100px;
     margin-bottom: 15px;
 }
+.bg-dark{
+    background-color: #444!important;
+    color:#fff!important;
+}
+.bg-gray-light {
+    background-color: #f2f2f2!important;
+    padding:15px;
+    border-radius: 4px;
+    margin-top: -15px;
+}
 .bg-white {
     background-color: #fff!important;
 }

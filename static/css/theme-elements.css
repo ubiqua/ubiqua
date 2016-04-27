@@ -5393,7 +5393,7 @@ section.timeline .timeline-box .owl-carousel {
 
 /* Style 3 */
 .testimonial.testimonial-style-3 blockquote {
-	background: #f2f2f2 !important;
+	background: #d8d8d8 !important;
 	border-radius: 4px;
 	padding: 18px 30px;
 }
@@ -5424,7 +5424,7 @@ section.timeline .timeline-box .owl-carousel {
 
 .testimonial.testimonial-style-3 .testimonial-arrow-down {
 	margin-left: 20px;
-	border-top: 10px solid #f2f2f2 !important;
+	border-top: 10px solid #d8d8d8 !important;
 }
 
 /* Style 4 */
@@ -7942,4 +7942,7 @@ ul.history li .featured-box .box-content {
 }
 .feature-box.feature-box-primary {
     min-height: 75px;
+}
+.counter.counter-primary.big strong {
+    font-size: 50px!important;
 }
