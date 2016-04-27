@@ -4437,7 +4437,7 @@ p.lead.dark.medium {
     margin-bottom: 20px;
 }
 .img-thumbnail {
-    padding: 10px;
+    padding: 5px;
     border: 1px dashed #7B7B7B;
 }
 .title h2 {
@@ -4680,6 +4680,10 @@ i.ave-product-icon2 {
     text-align: center!important;
     width: 60%;
     margin: 0 20%;
+}
+.post-info a {
+    letter-spacing: -0.5px;
+    word-spacing: 2px;
 }
 @media (max-width: 1200px) {
     .home-intro p {
