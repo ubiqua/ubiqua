@@ -4635,6 +4635,9 @@ i.ave-product-icon {
 .border-none{
     border:none!important;
 }
+.imp-list li {
+        margin-bottom: 5px!important;
+}
 i.ave-product-icon2 {
     float: left;
     height: 70px;
@@ -4647,6 +4650,17 @@ i.ave-product-icon2 {
     margin-right: 20px;
     margin-top: 10px;
     font-size: 28px;
+}
+.imp-list {
+    color: #fafafa;
+    text-align: left;
+
+    letter-spacing: -0.5px;
+}
+.center-img {
+    text-align: center!important;
+    width: 60%;
+    margin: 0 20%;
 }
 @media (max-width: 1200px) {
     .home-intro p {
