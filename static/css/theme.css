@@ -4685,6 +4685,12 @@ i.ave-product-icon2 {
     letter-spacing: -0.5px;
     word-spacing: 2px;
 }
+div#formModal {
+    z-index: 1050!important;
+}
+.modal-backdrop{
+    z-index: 10!important;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
