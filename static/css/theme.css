@@ -4714,6 +4714,12 @@ div#formModal {
     position: absolute;
     height: 87px;
 }
+.featured-boxes.big .featured-box .icon-featured {
+    width: 150px;
+    height: 150px;
+    line-height: 145px;
+    font-size: 65px;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
