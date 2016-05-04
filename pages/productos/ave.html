@@ -5,8 +5,15 @@ page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
 
 {% extends "base_page.html" %}
+
+{% block title %}
+
+{% include "slider/container_ave.html" %}
+
+
+{% endblock %}
 {% block content %}
-<div class="row mb-none">
+<div class="row mb-none mt-xlg">
     <div class="col-md-12 center">
         <h2 class="word-rotator-title mb-sm">Funcionalidades y beneficios de <strong>Ubiqua AVE</strong></h2>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

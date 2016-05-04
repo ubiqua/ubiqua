@@ -141,7 +141,7 @@
 				var pluginOptions = $this.data('plugin-options');
 				if (pluginOptions)
 					opts = pluginOptions;
-
+                
 				$this.themePluginCounter(opts);
 			});
 		});
