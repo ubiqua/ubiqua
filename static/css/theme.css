@@ -3105,7 +3105,7 @@ html.dark .text-muted {
 }
 
 #footer .contact p {
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 
 #footer .logo {
@@ -3193,7 +3193,10 @@ html.dark .text-muted {
 	filter: gray;
 	-webkit-filter: grayscale(100%);
 }
-
+h4.footer-link a {
+    text-decoration: none;
+    border-bottom: 1px solid #eaeaea;
+}
 #footer .recent-work .img-thumbnail-hover-icon {
 	border: 0;
 }
@@ -4690,6 +4693,26 @@ div#formModal {
 }
 .modal-backdrop{
     z-index: 10!important;
+}
+.thumb-info.circle {
+    background-color: inherit;
+    border: none;
+}
+.img-hover:hover {
+    /* content: ''; */
+    /* background-color: #000; */
+    /* z-index: 999; */
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.3s ease;
+}
+.menu-compensation{
+    margin-top: -87px;
+    position: absolute;
+    height: 87px;
 }
 @media (max-width: 1200px) {
     .home-intro p {
