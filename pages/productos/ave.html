@@ -181,7 +181,7 @@ page_description: Lorem Ipsum
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
               <i class="fa fa-list"></i>
-              <strong data-to="1100000" data-prepend="+">0</strong>
+              <strong class="count" data-num="1100000" text-final="1,100,000" data-prepend="+"></strong>
               <label>Pedidos</label>
               <p class=" mb-xl">a tráves de nuestro sistema</p>
             </div>
@@ -190,7 +190,7 @@ page_description: Lorem Ipsum
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="900">
               <i class="fa fa-user"></i>
-              <strong data-to="700" data-prepend="+">0</strong>
+              <strong class="count" data-num="700" text-final="700" data-prepend="+"></strong>
               <label>Vendedores</label>
               <p class=" mb-xl">usando nuestra aplicación</p>
             </div>
@@ -198,7 +198,7 @@ page_description: Lorem Ipsum
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="900">
               <i class="fa fa-mobile" aria-hidden="true"></i>
-              <strong data-to="800" data-prepend="+">0</strong>
+                <strong class="count" data-num="800" text-final="800" data-prepend="+"></strong>
               <label>Puntos de Venta</label>
               <p class=" mb-xl">en Panama</p>
             </div>
@@ -206,7 +206,7 @@ page_description: Lorem Ipsum
          <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="counter appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
               <i class="fa fa-dollar"></i>
-              <strong data-prepend="+" data-to="1000000">0</strong>
+              <strong class="count" data-num="1000000" text-final="1,000,000" data-prepend="+"></strong>
               <label>Ventas</label>
               <p class=" mb-xl">a través de Ubiqua AVE</p>
             </div>
@@ -215,6 +215,7 @@ page_description: Lorem Ipsum
       </div>
 
 </div>
+
 </section>
 <div class="container mt-xlg mb-lg">
     <br>
@@ -275,4 +276,42 @@ page_description: Lorem Ipsum
 </div>
 
 {% include "index/clients_quotes.html" %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(window).load(function() {
+
+        $('.count').each(function() {
+            var $this = $(this);
+            animateNumber($this);
+   
+        });
+        
+    });
+    function animateNumber($element){
+        var final = $element.attr("data-num");
+        var final_text = $element.attr("text-final");
+        var pre = $element.attr("data-prepend");
+        /*alert(final + ' ' + final_text );*/
+        jQuery({Counter: 0}).animate({Counter: final}, {
+                duration: 3000,
+                easing: 'swing',
+                step: function() {
+                    var num = Math.ceil(this.Counter).toString();
+                    if(Number(num) > 999){
+                        while (/(\d+)(\d{3})/.test(num)) {
+                            num = num.replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+                        }
+                    }
+                    $element.text(num);
+
+                },
+                complete: function(){
+                    $element.text(pre+final_text);
+                }
+            });  
+    }
+
+</script>
 {% endblock %}
