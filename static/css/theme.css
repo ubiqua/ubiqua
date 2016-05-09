@@ -4720,6 +4720,12 @@ div#formModal {
     line-height: 145px;
     font-size: 65px;
 }
+.ca-med{
+    padding: 18px 0 20px 0;
+}
+.mt-18{
+    margin-top: 20px;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
