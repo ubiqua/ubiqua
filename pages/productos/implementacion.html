@@ -1,6 +1,6 @@
 page_title: Implementación
 title: Implementación de soluciones
-subtitle: Dale a tu vendedor las herramientas y la motivación para vender más. 
+subtitle: Dale a tu vendedor las herramientas y la motivación para vender más.
 page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
 
@@ -8,23 +8,12 @@ page_description: Lorem Ipsum
 
 {% block title %}
 
-<section class="mb-xlg page-header page-header-custom-background parallax" data-stellar-background-ratio="0.5" style="background-image: url({% static '/img/implementacion/background.jpg' %});">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-sm-6 col-xs-12">
-                <h1>Implementación de Soluciones<span>La clave del éxito de un proyecto tecnológico es su implementación.</span></h1>
-                <br><br>
-                <p>Nosotros tenemos al mejor equipo de gerentes de proyecto y programadores dedicados a que las implementaciones sean efectivas, seguras y de la mano con nuestros clientes.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+  {% include "implementacion/slider.html" %}
 
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container mt-xl">
     <div class="row mb-none">
         <div class="col-md-12 center">
             <h2 class="word-rotator-title mb-sm">Sincronización de sus <strong>datos</strong> </h2>
@@ -68,15 +57,15 @@ page_description: Lorem Ipsum
                 </div>
                 <p>Tenemos aliados estrátegicos certificados en tu sistema ERP para asegurarnos que la sincronización sea 100% segura.</p>
                 <p>En caso de que tu sistema sea hecho in-house, nuestro técnicos hacen un diagnóstico detallando cómo vamos a sincronizar la información y con qué frecuencia. </p>
-                
-            
+
+
             </div>
              <div class="col-md-5 col-md-offset-1">
                 <h4>2. Por medio de exportación de archivos .csv o Excel</h4>
                 <p>Importamos data automáticamente de tu sistema a UBIQUA por medio de archivos TXT o CSV. Una opción muy rápida de hacer.</p>
-                 <img class="img-responsive" src="http://placehold.it/450x550">
-            
-            
+                 <img class="img-responsive" src="{% static '/img/implementacion/data.jpg' %}">
+
+
             </div>
         </div>
     </div>
@@ -110,12 +99,12 @@ page_description: Lorem Ipsum
                     <li><i class="fa fa-check"></i> Mantener a los gerentes al tanto de los avances del proyecto.</li>
                 </ul>
             </div>
-            
+
 
 
             <div class="col-md-6 mb-xl">
                 <img class="center-img img-responsive appear-animation doted-border circle " src="{% static '/img/productos/imp/capacitacion.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight">
-            
+
                 <h4 class="mt-xl"><strong>Capacitaciones</strong> de los usuarios</h4>
                 <hr>
                 <ul class="list list-icons list-primary imp-list">
@@ -135,4 +124,3 @@ page_description: Lorem Ipsum
 {% include "implementacion/resultados.html" %}
 
 {% endblock %}
-

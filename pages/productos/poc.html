@@ -6,25 +6,22 @@ page_description: Lorem Ipsum
 ca_footer: yes
 
 {% extends "base_page.html" %}
+
+{% block title %}
+  {% include "poc/slider.html" %}
+{% endblock %}
+
 {% block content %}
-<div class="container mb-xlg">
-    <div class="row">
-        <div class="col-md-12 center">
-            <h2 class="word-rotator-title mb-sm">Procesa tus órdenes de compra de manera <strong>automática y sin errores</strong></h2>
-            <p class="lead">Los puntos de venta más grandes generan órdenes de compra y se las envían electrónicamente a su proveedor en distintos formatos. El procesamiento de estas órdenes es muy manual y propenso a errores. </p>
-            <hr class="tall">
-        </div>
-    </div>
+<div class="container mb-xlg mt-xlg">
     <div class="row">
         <div class="col-md-12">
+
             <div class="col-md-4">
                 <div class="title">
-                    <h2>Beneficios de<strong> Ubiqua POC</strong></h2>
-                    
-                    <p>Ubiqua POC se encarga de facturar las órdenes de compra de las cadenas más grandes de supermercados y tiendas en cuestión de segundos.</p>
+                    <p class="lead mt-xlg">Ubiqua POC se encarga de facturar las órdenes de compra de las cadenas más grandes de supermercados y tiendas en cuestión de segundos.</p>
                 </div>
-
             </div>
+
             <div class="col-md-8">
                 <div class="featured-boxes featured-boxes-style-2">
                         <p>Con <strong>Ubiqua POC</strong> tu empresa podrá:<br><br></p>
@@ -75,7 +72,7 @@ ca_footer: yes
             </div>
         </div>
     </div>
-    
+
 </div>
 
 <section class="section bg_producto section-text-light section-with-mockup mb-none">
@@ -96,7 +93,7 @@ ca_footer: yes
                         Aumente la velocidad del procesamiento de órdenes de compra. Tan pronto llega una orden de compra por correo electrónico, POC procesa la orden sin necesidad que una persona digite los productos requeridos.
                     </p>
                 </div>
-       
+
 
                 <div class="col-md-6 center">
                     <i class="fa fa-exclamation-circle product-icon" aria-hidden="true"></i>

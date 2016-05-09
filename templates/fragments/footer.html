@@ -9,20 +9,8 @@
           <h4>Newsletter</h4>
           <p>Esté al tanto de todas nuestras novedades y noticias. introduzca su dirección de email y suscríbase a nuestro lista de emails.</p>
 
-          <div class="alert alert-success hidden" id="newsletterSuccess">
-            <strong>Success!</strong> You've been added to our email list.
-          </div>
+          {% include "fragments/mailchimp.html" %}
 
-          <div class="alert alert-danger hidden" id="newsletterError"></div>
-
-          <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
-            <div class="input-group">
-              <input class="form-control" placeholder="Su email..." name="newsletterEmail" id="newsletterEmail" type="text">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit">Suscribir</button>
-              </span>
-            </div>
-          </form>
         </div>
       </div>
       <div class="col-md-3">
@@ -44,7 +32,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <div class="post-image">
                         <div class="img-thumbnail">
