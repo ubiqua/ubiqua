@@ -4726,6 +4726,9 @@ div#formModal {
 .mt-18{
     margin-top: 20px;
 }
+.mt-80{
+    margin-top: 80px;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
