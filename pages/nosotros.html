@@ -3,6 +3,7 @@ title: ¿Quiénes Somos?
 subtitle: Conozca más de nosotros
 page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
+img_bg: ../static/img/bg/nosotros.jpg
 
 
 {% extends "base_page.html" %}
@@ -27,7 +28,33 @@ page_description: Lorem Ipsum
         <h4 class="heading-primary"><strong>Fundada en 2012</strong></h4>
         <p>Diego, Gabriela, Jorge y José Ramón fundaron Ubiqua, un startup panameño de diseño y desarrollo de software. La idea fue seguir la metodología de trabajo de la escuela de diseño de Stanford (Stanford dSchool) para innovar y desarrollar herramientas de trabajo para empoderar a los empleados y liberarlos de procesos manuales. Esta filosofía y estas metodologías las usan las mejores empresas de tecnología en Silicon Valley en California.</p>
         <p>Hoy somos una empresa de 12 empleados que atiende a más de 600 usuarios a nivel nacional de 11 empresas líderes en las industrias farmacéuticas, de consumo masivo, y de producción.</p>
-        <a href="{% url '/nosotros/historia.html' %}" class="btn btn-primary btn-sm">Conozca nuestra historia completa</a>
+        <div class="toggle toggle-primary" data-plugin-toggle>
+            <section class="toggle ubiqua">
+                <label>Conozca nuestra historia completa</label>
+                <div class="toggle-content">
+                    <br>
+                    <h4 class="heading-primary"><strong>2012 <small>(Donde todo comienza)</small></strong></h4>
+                    <p>En el 2012 Diego, Gabriela, Jorge y José Ramón fundaron Ubiqua, un startup panameño de diseño y desarrollo de software enfocados en compañías de distribución y producción. Durante este primer año de vida desarrollamos, en menos de 4 meses, un prototipo de una aplicación móvil que le permitía a los vendedores de <strong>Feduro</strong> ingresar pedidos directamente al sistema de una manera remota, rápida y conveniente.</p>
+
+                    <h4 class="heading-primary"><strong>2013</strong></h4>
+                    <p>Terminamos el año 2013 con una versión mejorada de la aplicación y 65 usuarios entre Agencias Feduro y ganando nuestro nuevo cliente: Grupo De Haseth.</p>
+
+
+                    <h4 class="heading-primary"><strong>2014</strong></h4>
+                    <p>En el 2014 seguimos innovando. Gracias al apoyo de nuestro nuevo integrante del equipo de trabajo, Alberto, logramos terminar el año con un crecimiento de 190 usuarios en 5 clientes totales. </p>
+
+
+
+                    <h4 class="heading-primary"><strong>2015</strong></h4>
+                    <p>En el 2015 decidimos acelerar nuestro proceso de desarrollo del producto y minimizar el tiempo de implementación de clientes nuevos. Para esto contratamos 4 ingenieros en sistemas, 2 Project Managers y una asistente administrativa. Terminamos el año con más una aplicación muy completa, llena de funcionalidades nuevas y con mejoras exponenciales en rendimiento, seguridad y uso de memoria. Logramos superar los 600 usuarios a nivel nacional, implementados en 11 empresas panameñas. </p>
+
+                    <h4 class="heading-primary"><strong>2016 <small>(La historia continua...)</small></strong></h4>
+                    <p>En el 2016 buscamos seguir expandiendo nuestra oferta para empresas panameñas y explorar oportunidades en mercados internacionales.</p>
+
+                </div>
+            </section>
+        </div>
+
         
         
     </div>
@@ -88,28 +115,49 @@ page_description: Lorem Ipsum
                     <li>
                         <a title="Navidad 2015" href="{% static '/img/nosotros/ubiqua1.jpg' %}">
                             <span class="thumbnail mb-none">
-                                <img src="{% static '/img/nosotros/ubiqua_mini_1.jpg' %}" width="220" alt="">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_1.jpg' %}" width="130" alt="">
                             </span>
                         </a>
                     </li>
                     <li>
                         <a title="Bowling" href="{% static '/img/nosotros/ubiqua2.jpg' %}">
                             <span class="thumbnail mb-none">
-                                <img src="{% static '/img/nosotros/ubiqua_mini_2.jpg' %}" width="220" alt="">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_2.jpg' %}" width="130" alt="">
                             </span>
                         </a>
                     </li>
                     <li>
                         <a title="Socios Ubiqua" href="{% static '/img/nosotros/ubiqua3.jpg' %}">
                             <span class="thumbnail mb-none">
-                                <img src="{% static '/img/nosotros/ubiqua_mini_3.jpg' %}" width="220" alt="">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_3.jpg' %}" width="130" alt="">
                             </span>
                         </a>
                     </li>
                     <li>
                         <a title="Primera Imagen de empresa" href="{% static '/img/nosotros/ubiqua4.jpg' %}">
                             <span class="thumbnail mb-none">
-                                <img src="{% static '/img/nosotros/ubiqua_mini_4.jpg' %}" width="220" alt="">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_4.jpg' %}" width="130" alt="">
+                            </span>
+                        </a>
+                    </li>
+                     <li>
+                        <a title="BDay" href="{% static '/img/nosotros/ubiqua5.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_5.jpg' %}" width="130" alt="">
+                            </span>
+                        </a>
+                    </li>
+                     <li>
+                        <a title="Nuevo equipo Ubiqua" href="{% static '/img/nosotros/ubiqua6.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_6.jpg' %}" width="130" alt="">
+                            </span>
+                        </a>
+                    </li>
+                     <li>
+                        <a title="Capatec" href="{% static '/img/nosotros/ubiqua7.jpg' %}">
+                            <span class="thumbnail mb-none">
+                                <img src="{% static '/img/nosotros/ubiqua_mini_7.jpg' %}" width="130" alt="">
                             </span>
                         </a>
                     </li>

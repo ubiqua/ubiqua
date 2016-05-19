@@ -4729,6 +4729,17 @@ div#formModal {
 .mt-80{
     margin-top: 80px;
 }
+.toggle.ubiqua label {
+    max-width: 300px;
+    margin-top: 30px;
+    padding: 8px 20px 8px 10px;
+    background-color: #f46c22;
+    color: #fff!important;
+    border-left-color: #ffffff!important;
+}
+.toggle.ubiqua label:hover {
+    background-color: #444;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
