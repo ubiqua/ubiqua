@@ -44,11 +44,8 @@
                                                 Clientes
                                             </a>
                                         </li>
-                                        <li class="
-                                                   {% if_current_page '/nosotros/historia.html' 'active' %}
-                                                   {% if_current_page '/nosotros/quienes_somos.html' 'active' %}
-                                                   ">
-                                            <a class="" href="{% url '/nosotros/quienes_somos.html' %}">
+                                        <li class="{% if_current_page '/nosotros.html' 'active' %}">
+                                            <a class="" href="{% url '/nosotros.html' %}">
                                                 Nosotros
                                             </a>
                                         </li>
