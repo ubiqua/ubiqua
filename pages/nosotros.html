@@ -5,12 +5,15 @@ page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
 img_bg: ../static/img/bg/nosotros.jpg
 
-
 {% extends "base_page.html" %}
+
+{% block title %}
+{% include "slider/container_nosotros.html" %}
+{% endblock %}
 
 {% block content %}
 
-<div class="container mb-xlg">
+<div class="container mb-xlg mt-xlg">
     <div class="row">
         <div class="col-md-12 center">
             <h2 class="word-rotator-title mb-sm">Diseño y desarrollo de <strong>software empresarial</strong> </h2>

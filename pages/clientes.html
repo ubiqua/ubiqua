@@ -7,6 +7,9 @@ page_description: Lorem Ipsum
 img_bg: ../static/img/bg/nosotros.jpg
 
 {% extends "base_page.html" %}
+{% block title %}
+{% include "slider/container_clientes.html" %}
+{% endblock %}
 {% block content %}
     {% include "clientes/client_list.html" %}
     {% include "clientes/video.html" %}
