@@ -4924,11 +4924,9 @@ div#formModal {
 }
 @media (max-width: 440px){
  
-    .tp-caption.bottom-label {
-        display: none!important;
-    }
+
     a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
-        top: 30px;
+        top: 80px;
     }
     .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
         height: 300px!important;
@@ -4938,7 +4936,7 @@ div#formModal {
 
     }
     .tp-mask-wrap {
-        top: -80px;
+        top: -100px;
         left: 100px;
     }
 }
@@ -4959,7 +4957,7 @@ div#formModal {
 @media (max-width: 400px){
      .tp-mask-wrap {
         left: 90px;
-        top: -70px;
+        top: -110px;
     }
     .tp-caption.main-label {
         font-size: 25px!important;
@@ -4969,7 +4967,7 @@ div#formModal {
         font-size: 16px!important;
     }
     a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
-        top: 30px;
+        top: 90px;
         
     }
      .slider-container.rev_slider_wrapper, div#revolutionSlider, .tp-fullwidth-forcer {
@@ -4978,6 +4976,11 @@ div#formModal {
  
 }
 @media (max-width: 353px){
+    .tp-caption.bottom-label {
+        font-size: 12px!important;
+        line-height: 12px!important;
+        top: 80px;
+    }
  
     .mt-500-sm{
         margin-top: 620px!important;
@@ -4992,8 +4995,13 @@ div#formModal {
         width: 100%;
     }
     a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
-        top: 50px;
+        top: 90px;
         
+    }
+    #header.header-narrow .header-logo img {
+        margin: 15px 12px 8px 0;
+        width: 120px;
+        height: auto;
     }
  
     
@@ -5014,8 +5022,11 @@ div#formModal {
         top: 80px;
     }
     a.tp-caption.btn.btn-md.btn-primary.btn-slider-action {
-        top: 50px;
+        display: none;
         
+    }
+    .forcefullwidth_wrapper_tp_banner {
+        display: none;
     }
  
 }
