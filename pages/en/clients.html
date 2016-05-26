@@ -1,0 +1,22 @@
+page_title: Nuestros Clientes
+title: Nuestro Clientes
+ca_footer: no
+subtitle: Conozca quienes han trabajado con nosotros
+page_keywords: Lorem Ipsum
+page_description: Lorem Ipsum
+img_bg: ../static/img/bg/nosotros.jpg
+lang: en
+es_url: ../../clientes/
+
+
+{% extends "base_page.html" %}
+{% block title %}
+{% include "slider/container_clientes.html" %}
+{% endblock %}
+{% block content %}
+    {% include "clientes/client_list.html" %}
+    {% include "clientes/video.html" %}
+    {% include "clientes/hero.html" %}
+    {% include "index/clients_quotes.html" %}
+    
+{% endblock %}
