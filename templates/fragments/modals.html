@@ -47,7 +47,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="formModalLabel">Contáctenos para conocer más de Ubiqua</h4>
+                <h4 class="modal-title" id="formModalLabel">
+                    {% if lang == "es" %}
+                    Contáctenos para conocer más de Ubiqua
+                    {% endif %}
+                    {% if lang == "en" %}
+                    Contact us for more information
+                    {% endif %}
+                </h4>
             </div>
             <div class="modal-body">
                 <form id="demo-form" class="form-horizontal mb-lg" novalidate="novalidate">

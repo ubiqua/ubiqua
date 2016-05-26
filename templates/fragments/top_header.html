@@ -4,9 +4,17 @@
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-logo">
+                        {% if lang == "es" %}
                         <a href="{% url '/index.html' %}">
                             <img class="logo" alt="Ubiqua Panamá" src="{% static '/img/logo.png' %}">
                         </a>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <a href="{% url '/en/index.html' %}">
+                            <img class="logo" alt="Ubiqua Panama" src="{% static '/img/logo.png' %}">
+                        </a>
+                        {% endif %} 
+            
                     </div>
                 </div>
                 <div class="header-column">
@@ -18,59 +26,116 @@
                             <div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
                                 <nav>
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li class=" {% if_current_page '/index.html' 'active' %}">
-                                            <a class="" href="{% url '/index.html' %}">
-                                                Inicio
-                                            </a>
+                                        {% if lang == "es" %}
+                                            <li class=" {% if_current_page '/index.html' 'active' %}">
+                                                <a class="" href="{% url '/index.html' %}">
+                                                    Inicio
+                                                </a>
+                                            </li>
+                                            <li class="dropdown
+                                                       {% if_current_page '/productos/implementacion.html' 'active' %}
+                                                       {% if_current_page '/productos/ave.html' 'active' %}
+                                                       ">
+                                                <a class="dropdown-toggle" href="#">
+                                                    Productos
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
+                                                    <li><a href="{% url '/productos/ave.html' %}">AVE - Catálogo Digital</a></li>
+                                                    <li><a href="{% url '/productos/poc.html' %}">POC - Procesamiento de Datos</a></li>
 
-                                        </li>
-                                        <li class="dropdown
-                                                   {% if_current_page '/productos/implementacion.html' 'active' %}
-                                                   {% if_current_page '/productos/ave.html' 'active' %}
-                                                   ">
-                                            <a class="dropdown-toggle" href="#">
-                                                Productos
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
-                                                <li><a href="{% url '/productos/ave.html' %}">AVE - Catálogo Digital</a></li>
-                                                <li><a href="{% url '/productos/poc.html' %}">POC - Procesamiento de Datos</a></li>
+                                                </ul>
 
-                                            </ul>
+                                            </li>
+                                            <li class="dropdown {% if_current_page '/clientes.html' 'active' %}">
+                                                <a class="" href="{% url '/clientes.html' %}">
+                                                    Clientes
+                                                </a>
+                                            </li>
+                                            <li class="{% if_current_page '/nosotros.html' 'active' %}">
+                                                <a class="" href="{% url '/nosotros.html' %}">
+                                                    Nosotros
+                                                </a>
+                                            </li>
 
-                                        </li>
-                                         <li class="dropdown {% if_current_page '/clientes.html' 'active' %}">
-                                            <a class="" href="{% url '/clientes.html' %}">
-                                                Clientes
-                                            </a>
-                                        </li>
-                                        <li class="{% if_current_page '/nosotros.html' 'active' %}">
-                                            <a class="" href="{% url '/nosotros.html' %}">
-                                                Nosotros
-                                            </a>
-                                        </li>
+                                            <li class=" {% if_current_page '/contacto.html' 'active' %}">
+                                                <a class="" href="{% url '/contacto.html' %}">
+                                                    Contáctenos
+                                                </a>
 
-                                        <li class=" {% if_current_page '/contacto.html' 'active' %}">
-                                            <a class="" href="{% url '/contacto.html' %}">
-                                                Contáctenos
-                                            </a>
-
-                                        </li>
-                                         <button class="btn btn-quaternary" style="margin-top:15px;" data-toggle="modal" data-target="#formModalContact">
-										  Contáctanos para saber más
-									    </button>
+                                            </li>
+                                             <button class="btn btn-quaternary" style="margin-top:15px;" data-toggle="modal" data-target="#formModalContact">
+                                              Contáctanos para saber más
+                                            </button>
 
 
-                                        <li class="lang">
-                                            <a href="#" class="dropdown-menu-toggle lang" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                <img src="{% static '/img/blank.gif' %}" class="flag flag-es" alt="English" /> ES
-                                                <i class="fa fa-angle-down"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguage">
-                                                <li><a href="{{ en_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-us" alt="English" /> EN</a></li>
-                                                <li><a href="{{ es_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-es" alt="Español" /> ES</a></li>
-                                            </ul>
-                                        </li>
+                                            <li class="lang">
+                                                <a href="#" class="dropdown-menu-toggle lang" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <img src="{% static '/img/blank.gif' %}" class="flag flag-es" alt="English" /> ES
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-right lang" aria-labelledby="dropdownLanguage">
+                                                    <li><a href="{{ en_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-us" alt="English" /> EN</a></li>
+                                                    <li><a href="{{ es_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-es" alt="Español" /> ES</a></li>
+                                                </ul>
+                                            </li>
+                                        {% endif %}
+                                        {% if lang == "en" %}
+                                            <li class=" {% if_current_page '/index.html' 'active' %}">
+                                                <a class="" href="{% url '/en/index.html' %}">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="dropdown
+                                                       {% if_current_page '/en/products/integration.html' 'active' %}
+                                                       {% if_current_page '/en/products/ave.html' 'active' %}
+                                                       {% if_current_page '/en/products/poc.html' 'active' %}
+                                                       ">
+                                                <a class="dropdown-toggle" href="#">
+                                                    Products
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="{% url '/en/products/integration.html' %}">Integration</a></li>
+                                                    <li><a href="{% url '/en/products/ave.html' %}">AVE - Digital Catlog</a></li>
+                                                    <li><a href="{% url '/en/products/poc.html' %}">POC - Purchase Order Processing</a></li>
+
+                                                </ul>
+
+                                            </li>
+                                             <li class="dropdown {% if_current_page '/en/clients.html' 'active' %}">
+                                                <a class="" href="{% url '/en/clients.html' %}">
+                                                    Clients
+                                                </a>
+                                            </li>
+                                            <li class="{% if_current_page '/en/about_us.html' 'active' %}">
+                                                <a class="" href="{% url '/en/about_us.html' %}">
+                                                    About Us
+                                                </a>
+                                            </li>
+
+                                            <li class=" {% if_current_page '/en/contact_us.html' 'active' %}">
+                                                <a class="" href="{% url '/en/contact_us.html' %}">
+                                                    Contact Us
+                                                </a>
+
+                                            </li>
+                                             <button class="btn btn-quaternary" style="margin-top:15px;" data-toggle="modal" data-target="#formModalContact">
+                                              Get more information!
+                                            </button>
+
+
+                                            <li class="lang">
+                                                <a href="#" class="dropdown-menu-toggle lang" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <img src="{% static '/img/blank.gif' %}" class="flag flag-us" alt="English" /> EN
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-right lang" aria-labelledby="dropdownLanguage">
+                                                    <li><a href="{{ en_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-us" alt="English" /> EN</a></li>
+                                                    <li><a href="{{ es_url }}"><img src="{% static '/img/blank.gif' %}" class="flag flag-es" alt="Español" /> ES</a></li>
+                                                </ul>
+                                            </li>
+                                        {% endif %}
+                                        
                                     </ul>
                                 </nav>
                                 {% include "fragments/modals.html" %}

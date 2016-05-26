@@ -4740,6 +4740,9 @@ div#formModal {
 .toggle.ubiqua label:hover {
     background-color: #444;
 }
+ul.dropdown-menu.lang {
+    min-width: inherit;
+}
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
