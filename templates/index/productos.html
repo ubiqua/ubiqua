@@ -1,56 +1,51 @@
 
 <section
-  class="parallax section  section-parallax  mt-none mb-none"
-  data-stellar-background-ratio="0.5"
+  class="parallax section section-text-light section-parallax  mt-none mb-none bg_producto"
+  data-stellar-background-ratio="0.5" id="soluciones"
   >
-	<div class="container">
+	<div class="container" >
          <div class="row mb-xlg center">
             <div class="col-md-12 ">
-              <h2 class="word-rotator-title mb-sm">Soluciones <strong>Ubiqua</strong></h2>
-              <p class="lead">Te ayudamos a <strong>aumentar tus ventas y disminuir tus costos operativos</strong><br> con soluciones modulares que son extremadamente fáciles de usar.</p>
+              <div class="title3">
+                        <h1>Soluciones <strong>Ubiqua</strong></h1>
+                        <span>Te ayudamos a <strong>aumentar tus ventas y disminuir tus costos operativos</strong><br> con soluciones modulares que son extremadamente fáciles de usar.</span>
+                    </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <img class="img-responsive doted-border appear-animation circle" src="{% static '/img/index/ave.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
-            </div>
-            <div class="col-md-8">
-                <h2 class="mt-xl"><strong>Ubiqua</strong> AVE</h2>
-                <p class="lead">
-                    Herramienta que convierte a tu vendedor de un tomador de pedidos a un asesor de ventas.
+        <hr class="tall">
+        <div class="row center">
+            <div class="col-md-4 mb-xl">
+                <a href="{% url '/productos/ave.html' %}"><img class="img-responsive doted-border img-hover appear-animation circle" src="{% static '/img/index/ave.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft"></a>
+
+                <h4 class="mt-xl"><strong>Ubiqua</strong> AVE</h4>
+                <p >
+                    Herramienta que convierte a tu vendedor de un tomador de pedidos a un asesor de ventas.<br><br>
                 </p>
                 <a href="{% url '/productos/ave.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua AVE</a>
             </div>
-        </div>
 
-        <hr class="tall">
+            
 
-        <div class="row">
-            <div class="col-md-8">
-                <h2 class="mt-xl">Ubiqua <strong>POC</strong></h2>
-                <p class="lead">
+
+            <div class="col-md-4 mb-xl">
+                <a href="{% url '/productos/poc.html' %}"><img class="img-responsive appear-animation img-hover doted-border circle " src="{% static '/img/index/poc.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight"></a>
+            
+                <h4 class="mt-xl">Ubiqua <strong>POC</strong></h4>
+                <p >
                     Nos encargamos de la facturación de las órdenes de compra de tus clientes acelerando tu facturación y ahorrando costos operativos. 
                 </p>
-                <a href="{% url '/productos/implementacion.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua POC</a>
-
+                <a href="{% url '/productos/poc.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua POC</a>
             </div>
 
-            <div class="col-md-3">
-                <img class="img-responsive appear-animation doted-border circle" src="{% static '/img/index/poc.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight">
-            </div>
-        </div>
-<hr class="tall">
-        <div class="row">
-            <div class="col-md-3">
-                <img class="img-responsive  doted-border appear-animation circle" src="{% static '/img/index/ana.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
-            </div>
-            <div class="col-md-8">
-                <h2 class="mt-xl">Ubiqua <strong>ANALYTICS</strong></h2>
-                <p class="lead">
+            <div class="col-md-4 mb-xl">
+                <img class="img-responsive  doted-border appear-animation circle" src="{% static '/img/index/ana-temp.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
+                <h4 class="mt-xl">Ubiqua <strong>ANALYTICS</strong></h4>
+                <p>
                     Accesa a información de cobertura y ventas 
                 </p>
-                <a href="#" class="btn btn-primary btn-sm">Próximamente...</a>
+                <h4>Próximamente...</h4>
             </div>
+            
         </div>
 
     </div>
