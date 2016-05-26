@@ -5,10 +5,12 @@ page_author: Bluetide
 lang: en
 es_url: ../../
 
-{% extends "base.html" %}
+{% extends "base_page.html" %}
+{% block title %}
+    {% include "slider/container.html" %}
+{% endblock %}
 
 {% block content %}
-  {% include "slider/container.html" %}
   {% include "index/intro.html" %}
   {% include "index/rentabilidad.html" %}
   {% include "index/stats.html" %}

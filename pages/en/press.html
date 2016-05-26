@@ -3,12 +3,24 @@ title: Prensa & Media
 subtitle: Artículos y noticias sobre nosotros
 page_keywords: Lorem Ipsum
 page_description: Lorem Ipsum
-img_bg: ../static/img/bg/prensa.jpg
+img_bg: ../../static/img/bg/prensa.jpg
 lang: en
 es_url: ../../prensa/
 
 
 {% extends "base_page.html" %}
+
+{% block title %}
+    <section class="page-header page-header-custom-background parallax" data-stellar-background-ratio="0.5" style="background-image: url('{{ img_bg }}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title }}<span>{{ subtitle }}</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
 
 {% block content %}
 
