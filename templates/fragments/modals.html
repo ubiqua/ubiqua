@@ -3,39 +3,72 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="formModalLabel">Solicitud de demostración gratuita</h4>
+                <h4 class="modal-title" id="formModalLabel">
+                    {% if lang == "es" %}
+                    Solicitud de demostración gratuita
+                    {% endif %}
+                    {% if lang == "en" %}
+                    Request a free demo
+                    {% endif %}
+                </h4>
             </div>
             <div class="modal-body">
                 <form id="demo-form" class="form-horizontal mb-lg" novalidate="novalidate">
                     <div class="form-group mt-lg">
+                        {% if lang == "es" %}
                         <label class="col-sm-3 control-label">Nombre*</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Name*</label>
+                        {% endif %}
                         <div class="col-sm-9">
-                            <input type="text" name="name" class="form-control" placeholder="Su nombre" required/>
+                            <input type="text" name="name" class="form-control" placeholder="John Doe" required/>
                         </div>
                     </div>
                     <div class="form-group">
+                         {% if lang == "es" %}
                         <label class="col-sm-3 control-label">Email*</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Email*</label>
+                        {% endif %}
                         <div class="col-sm-9">
-                            <input type="email" name="email" class="form-control" placeholder="Su Email" required/>
+                            <input type="email" name="email" class="form-control" placeholder="jdoe@ubiqua.me" required/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">Teléfono</label>
+                         {% if lang == "es" %}
+                        <label class="col-sm-3 control-label">Teléfono*</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Phone*</label>
+                        {% endif %}
                         <div class="col-sm-9">
-                            <input type="url" name="url" class="form-control" placeholder="Su teléfono" />
+                            <input type="url" name="url" class="form-control" placeholder="+507 1234 5678" />
                         </div>
                     </div>
                     <div class="form-group">
+                         {% if lang == "es" %}
                         <label class="col-sm-3 control-label">Mensaje</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Messagge</label>
+                        {% endif %}
                         <div class="col-sm-9">
-                            <textarea rows="5" class="form-control" placeholder="Escriba sus comentarios" required></textarea>
+                            <textarea rows="5" class="form-control" placeholder="..." required></textarea>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
+                {% if lang == "es" %}
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary">Enviar Solicitud</button>
+                {% endif %}
+                {% if lang == "en" %}
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Request</button>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -59,28 +92,45 @@
             <div class="modal-body">
                 <form id="demo-form" class="form-horizontal mb-lg" novalidate="novalidate">
                     <div class="form-group mt-lg">
+                        {% if lang == "es" %}
                         <label class="col-sm-3 control-label">Nombre</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Name</label>
+                        {% endif %}
                         <div class="col-sm-9">
-                            <input type="text" name="name" class="form-control" placeholder="Su nombre" required/>
+                            <input type="text" name="name" class="form-control" placeholder="John Doe" required/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Email*</label>
                         <div class="col-sm-9">
-                            <input type="email" name="email" class="form-control" placeholder="Su Email" required/>
+                            <input type="email" name="email" class="form-control" placeholder="jdoe@ubiqua.me" required/>
                         </div>
                     </div>
                     <div class="form-group">
+                        {% if lang == "es" %}
                         <label class="col-sm-3 control-label">Teléfono</label>
+                        {% endif %}
+                        {% if lang == "en" %}
+                        <label class="col-sm-3 control-label">Phone</label>
+                        {% endif %}
+                        
                         <div class="col-sm-9">
-                            <input type="url" name="url" class="form-control" placeholder="Su teléfono" />
+                            <input type="url" name="url" class="form-control" placeholder="+507 1234 5678" />
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
+                {% if lang == "es" %}
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary">Enviar datos de contacto</button>
+                {% endif %}
+                {% if lang == "en" %}
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send contact info</button>
+                {% endif %}
             </div>
         </div>
     </div>
