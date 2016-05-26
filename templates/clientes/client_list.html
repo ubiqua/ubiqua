@@ -9,7 +9,14 @@
     <hr class="tall">
     <div class="row">
         <div class="col-md-12">
-            <h4>Nuestros clientes son lideres de la industria </h4>
+            <h4>
+                {% if lang == "es" %}
+                  Nuestros clientes son lideres de la industria
+                {% endif %}
+                {% if lang == "en" %}
+                  Our clients are industry leaders
+                {% endif %}
+            </h4>
             <div class="content-grid content-grid-dashed mt-xlg mb-lg">
                 <div class="row content-grid-row">
 
@@ -28,7 +35,14 @@
             </div>
         </div>
         <div class="col-md-12">
-            <h4>Distribuyen y venden marcas como:</h4>
+            <h4>
+                {% if lang == "es" %}
+                  Distribuyen y venden marcas como:
+                {% endif %}
+                {% if lang == "en" %}
+                  Our clients sell world class brands
+                {% endif %}
+            </h4>
           <div class="content-grid content-grid-dashed mt-xlg mb-lg">
               <div class="row content-grid-row">
 
