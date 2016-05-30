@@ -14,7 +14,14 @@
     data-transform_in="y:[100%];s:500;"
     data-transform_out="opacity:0;s:500;"
     style="z-index: 5"
-    data-mask_in="x:0px;y:0px;" >Aumentamos la rentabilidad</div>
+    data-mask_in="x:0px;y:0px;" >
+        {% if lang == "es" %}
+            Aumentamos la rentabilidad
+        {% endif %}
+        {% if lang == "en" %}
+             Improve your company’s profitability
+        {% endif %}
+    </div>
 
 
   <div class="tp-caption top-label top-ubiqua"
@@ -22,7 +29,15 @@
     data-y="center" data-voffset="-65"
     data-start="1000"
     style="z-index: 5"
-    data-transform_in="y:[-300%];opacity:0;s:500;">de tu negocio apoyando a tu departamento<br> comercial con soluciones innovadoras<br><hr></div>
+    data-transform_in="y:[-300%];opacity:0;s:500;">
+        {% if lang == "es" %}
+            de tu negocio apoyando a tu departamento<br> comercial con soluciones innovadoras<br><hr>
+        {% endif %}
+        {% if lang == "en" %}
+            by providing  innovative solutions to your<br> sales department <br><hr>
+
+        {% endif %}
+    </div>
 
   
 
@@ -47,6 +62,13 @@
     data-transform_in="y:[100%];s:500;"
     data-transform_out="opacity:0;s:500;"
     style="z-index: 5"
-    data-mask_in="x:0px;y:0px;">Nuestros Productos</a>
+    data-mask_in="x:0px;y:0px;">
+        {% if lang == "es" %}
+            Nuestros Productos
+        {% endif %}
+        {% if lang == "en" %}
+            View our Solutions
+        {% endif %}
+    </a>
 
 </li>
