@@ -89,22 +89,28 @@ def industry_list():
     return [
         {
             "ICON": "fa-cutlery",
-            "NAME": "Alimentos y bebidas"
+            "NAME": "Alimentos y bebidas",
+            "NAME_EN": "Food & drinks"
         },{
             "ICON": "fa-heartbeat",
-            "NAME": "Farmaceútica"
+            "NAME": "Farmaceútica",
+            "NAME_EN": "Pharmaceutical"
         },{
             "ICON": "fa-diamond",
-            "NAME": "Cosméticos"
+            "NAME": "Cosméticos",
+            "NAME_EN": "Cosmetic"
         },{
             "ICON": "fa-truck",
-            "NAME": "Artículos de limpieza"
+            "NAME": "Artículos de limpieza",
+            "NAME_EN": "Cleaning product"
         },{
             "ICON": "fa-cog",
-            "NAME": "Maquinaria y repuestos"
+            "NAME": "Maquinaria y repuestos",
+            "NAME_EN": "Machinery & spare parts"
         },{
             "ICON": "fa-shopping-bag",
-            "NAME": "Textil"
+            "NAME": "Textil",
+            "NAME_EN": "Textile industry"
         },
     ]
 

@@ -20,7 +20,16 @@
                                 <i class="fa {{ industry_item.ICON }} text-color-primary"></i>
                             </div>
                             <div class="feature-box-info">
-                                <h4 class="pt-xs"><strong class="semi-bold">{{ industry_item.NAME }}</strong></h4>
+                                <h4 class="pt-xs">
+                                    <strong class="semi-bold">
+                                        {% if lang == "es" %}
+                                          {{ industry_item.NAME }}
+                                        {% endif %}
+                                        {% if lang == "en" %}
+                                          {{ industry_item.NAME_EN }}
+                                        {% endif %}
+                                    </strong>
+                                </h4>
                             </div>
                         </div>
                     </div>
