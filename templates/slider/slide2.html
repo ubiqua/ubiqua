@@ -14,7 +14,15 @@
     data-transform_in="y:[100%];s:500;"
     data-transform_out="opacity:0;s:500;"
     style="z-index: 5"
-    data-mask_in="x:0px;y:0px;" >AVE: Aplicación de Ventas Móvil</div>
+    data-mask_in="x:0px;y:0px;" >
+        {% if lang == "es" %}
+            AVE: Aplicación de Ventas Móvil
+        {% endif %}
+        {% if lang == "en" %}
+            AVE: Aplicación de Ventas Móvil
+        {% endif %}
+       
+    </div>
 
 
   <div class="tp-caption top-label top-ubiqua"
@@ -22,7 +30,15 @@
     data-y="center" data-voffset="-65"
     data-start="1000"
     style="z-index: 5"
-    data-transform_in="y:[-300%];opacity:0;s:500;">Dale a tu vendedor las herramientas y la motivación<br> para vender más.<br><hr></div>
+    data-transform_in="y:[-300%];opacity:0;s:500;">
+        {% if lang == "es" %}
+            Dale a tu vendedor las herramientas y la motivación<br> para vender más.<br><hr>
+        {% endif %}
+        {% if lang == "en" %}
+            Dale a tu vendedor las herramientas y la motivación<br> para vender más.<br><hr>
+        {% endif %}
+        
+    </div>
 
 
 
@@ -47,6 +63,14 @@
     data-transform_in="y:[100%];s:500;"
     data-transform_out="opacity:0;s:500;"
     style="z-index: 5"
-    data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModalContact">Contáctenos para una prueba</a>
+    data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModal">
+        {% if lang == "es" %}
+            Contáctenos para una prueba
+        {% endif %}
+        {% if lang == "en" %}
+            Contact us for a demo
+        {% endif %}
+      
+    </a>
 
 </li>
