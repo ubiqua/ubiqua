@@ -6,24 +6,43 @@
                     <div class="counter">
                         <i class="fa fa-car" aria-hidden="true"></i>
                         <strong data-to="9" data-append="%"></strong>
-                        <label>Aumento visitas</label>
-                        <p class=" mb-xl">a clientes</p>
+                        {% if lang == "es" %}
+                            <label>Aumento visitas</label>
+                            <p class=" mb-xl">a clientes</p>
+                        {% endif %}
+                        {% if lang == "en" %}
+                            <label>Aumento visitas</label>
+                            <p class=" mb-xl">a clientes</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="counter">
                         <i class="fa fa-dollar"></i>
                         <strong data-to="13" data-append="%"></strong>
-                        <label>Disminución de costos</label>
-                        <p class=" mb-xl">por devoluciones</p>
+                        {% if lang == "es" %}
+                            <label>Disminución de costos</label>
+                            <p class=" mb-xl">por devoluciones</p>
+                        {% endif %}
+                        {% if lang == "en" %}
+                            <label>Disminución de costos</label>
+                            <p class=" mb-xl">por devoluciones</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="counter">
                         <i class="fa fa-phone"></i>
                         <strong data-to="78" data-append="%"></strong>
-                        <label>Disminución de</label>
-                        <p class=" mb-xl">llamadas a central</p>
+                        {% if lang == "es" %}
+                            <label>Disminución de</label>
+                            <p class=" mb-xl">llamadas a central</p>
+                        {% endif %}
+                        {% if lang == "en" %}
+                            <label>Disminución de</label>
+                            <p class=" mb-xl">llamadas a central</p>
+                        {% endif %}
+                        
                     </div>
                 </div>
             </div>

@@ -4,12 +4,25 @@
     <div class="row">
       <div class="col-md-7 col-sm-6">
         <p class="mt-18">
-          Aumente la productividad  de su empresa <em>Ahora</em>
+            {% if lang == "es" %}
+                Aumente la productividad  de su empresa <em>Ahora</em>
+            {% endif %}
+            {% if lang == "en" %}
+                Aumente la productividad  de su empresa <em>Ahora</em>
+            {% endif %}
+          
         </p>
       </div>
       <div class="col-md-5 col-sm-6">
         <div class="mt-lg mb-xl center">
-          <a href="#" data-hash class="btn btn-md btn-primary mr-md appear-animation" data-appear-animation="fadeInDown" data-appear-animation-delay="300" data-toggle="modal" data-target="#formModalContact">Contáctanos para saber más</a>
+          <a href="#" data-hash class="btn btn-md btn-primary mr-md appear-animation" data-appear-animation="fadeInDown" data-appear-animation-delay="300" data-toggle="modal" data-target="#formModalContact">
+            {% if lang == "es" %}
+                Contáctanos para saber más
+            {% endif %}
+            {% if lang == "en" %}
+                Register for more information
+            {% endif %}
+            </a>
         </div>
       </div>
     </div>

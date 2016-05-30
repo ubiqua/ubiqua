@@ -4,8 +4,14 @@
     <div class="row mb-xlg">
         <div class="col-md-12 center">
             <div class="title">
-                <h2>Nuestra estrategia de <strong>Servicios & Soporte</strong></h2>
-                  <span>Despues de la instalación, nuestro cliente pasa a la estrategia de servicio: </span>
+                {% if lang == "es" %}
+                    <h2>Nuestra estrategia de <strong>Servicios & Soporte</strong></h2>
+                    <span>Despues de la instalación, nuestro cliente pasa a la estrategia de servicio: </span>
+                {% endif %}
+                {% if lang == "en" %}
+                    <h2>Nuestra estrategia de <strong>Servicios & Soporte</strong></h2>
+                    <span>After implementing our services in your company, we provide customer services directly to the users. </span>
+                {% endif %}
             </div>
         </div>
         
@@ -15,29 +21,56 @@
             <div class="col-md-3">
                 <div class="featured-box-full featured-box-full-primary" style="height: 291px;">
                     <i class="fa fa-clock-o"></i>
-                    <h4>Horario de Atención</h4>
-                    <p>Disponible de Lunes a Viernes de 8:00 A.M. a 6:00 P.M.<br>Sábados de 8:00 A.M. a 12:00 P.M.</p>
+                    {% if lang == "es" %}
+                        <h4>Horario de Atención</h4>
+                        <p>Disponible de Lunes a Viernes de 8:00 A.M. a 6:00 P.M.<br>Sábados de 8:00 A.M. a 12:00 P.M.</p>
+                    {% endif %}
+                    {% if lang == "en" %}
+                        <h4>Support Hours</h4>
+                        <p>Monday to Friday 8:00 A.M. a 6:00 P.M.<br>Saturday 8:00 A.M. a 12:00 P.M.</p>
+                    {% endif %}
+                    
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="featured-box-full featured-box-full-primary" style="height: 291px;">
                     <i class="fa fa-ticket"></i>
-                    <h4>Sistema centralizado de Tickets</h4>
-                    <p>Utilización de sistema centralizado de tiquetes que mide nuestra efectividad.</p>
+                    {% if lang == "es" %}
+                        <h4>Sistema centralizado de Tickets</h4>
+                        <p>Utilización de sistema centralizado de tiquetes que mide nuestra efectividad.</p>
+                    {% endif %}
+                    {% if lang == "en" %}
+                        <h4>Sistema centralizado de Tickets</h4>
+                        <p>Utilización de sistema centralizado de tiquetes que mide nuestra efectividad.</p>
+                    {% endif %}
+                    
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="featured-box-full featured-box-full-primary" style="height: 291px;">
                     <i class="fa fa-users"></i>
-                    <h4>Visitas y seguimiento</h4>
-                    <p>Realizamos visitas y seguimientos a usuarios nuevos para asegurar la utilización óptima de la aplicación y apoyar en lo que necesiten</p>
+                    {% if lang == "es" %}
+                        <h4>Visitas y seguimiento</h4>
+                        <p>Realizamos visitas y seguimientos a usuarios nuevos para asegurar la utilización óptima de la aplicación y apoyar en lo que necesiten</p>
+                    {% endif %}
+                    {% if lang == "en" %}
+                        <h4>Visitas y seguimiento</h4>
+                        <p>Realizamos visitas y seguimientos a usuarios nuevos para asegurar la utilización óptima de la aplicación y apoyar en lo que necesiten</p>
+                    {% endif %}
+                    
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="featured-box-full featured-box-full-primary" style="height: 291px;">
                     <i class="fa fa-book"></i>
-                    <h4>Material de aprendizaje</h4>
-                    <p>Ofrecemos material de aprendizaje como videos y preguntas frecuentes para el constante aprendizaje del vendedor</p>
+                    {% if lang == "es" %}
+                        <h4>Material de aprendizaje</h4>
+                        <p>Ofrecemos material de aprendizaje como videos y preguntas frecuentes para el constante aprendizaje del vendedor</p>
+                    {% endif %}
+                    {% if lang == "en" %}
+                        <h4>Learning material</h4>
+                        <p>Ofrecemos material de aprendizaje como videos y preguntas frecuentes para el constante aprendizaje del vendedor</p>
+                    {% endif %}
                 </div>
             </div>
         </div>

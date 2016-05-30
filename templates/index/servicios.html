@@ -2,8 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 center">
-              <h2 class="word-rotator-title mb-sm">Nuestro servicio de <strong>Implementación y Soporte</strong></h2>
-              <p class="lead">Ofrecemos un servicio completo donde No te tienes que preocupar por nada. Tenemos el personal y la infraestructura necesaria para que no seamos un peso para tu empresa si no un aliado estratégico</p>
+                {% if lang == "es" %}
+                    <h2 class="word-rotator-title mb-sm">Nuestro servicio de <strong>Implementación y Soporte</strong></h2>
+                    <p class="lead">Ofrecemos un servicio completo donde No te tienes que preocupar por nada. Tenemos el personal y la infraestructura necesaria para que no seamos un peso para tu empresa si no un aliado estratégico</p>
+                {% endif %}
+                {% if lang == "en" %}
+                     <h2 class="word-rotator-title mb-sm">Best <strong>customer service</strong> in the industry</h2>
+                    <p class="lead">With Ubiqua, you don’t have to worry about anything. Our back office is responsible of making everything run smoothly. Our service includes:</p>
+                {% endif %}
+              
                 <hr class="tall">
             </div>
             
@@ -15,16 +22,29 @@
                         <div class="featured-box featured-box-primary featured-box-effect-4" style="height: 199px;">
                             <div class="box-content">
                                 <i class="icon-featured"><img src="{% static '/img/icon/people.png' %}"></i>
-                                <h4>Soporte técnico<br><br></h4>
-                                <hr>
+                                {% if lang == "es" %}
+                                    <h4>Soporte técnico<br><br></h4>
+                                    <hr>
+
+                                    <ul>
+                                        <li>Directo y rápido a usuarios y gerentes</li>
+                                        <li>Soporte por teléfono, whatsapp o correo electrónico</li>
+                                        <li>Tenemos el mejor tiempo de respuesta del mercado</li>
+                                    </ul>
+                                    <a href="{% url '/productos/implementacion.html' %}#soporte" class="btn btn-primary btn-sm mb-lg">Soporte Técnico</a>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    <h4>Customer support<br><br></h4>
+                                    <hr>
+
+                                    <ul>
+                                        <li>Directly to our users and your IT department</li>
+                                        <li>Soporte por teléfono, whatsapp o correo electrónico</li>
+                                        <li>Tenemos el mejor tiempo de respuesta del mercado</li>
+                                    </ul>
+                                    <a href="{% url '/en/products/integration.html' %}#soporte" class="btn btn-primary btn-sm mb-lg">Customer Support</a>
+                                {% endif %}
                                 
-                                <ul>
-                                    <li>Directo y rápido a usuarios y gerentes.</li>
-                                    <li>Soporte por teléfono, whatsapp o correo electrónico</li>
-                                    <li>Tenemos el mejor tiempo de respuesta del mercado</li>
-                                </ul>
-                                <br>
-                                <a href="{% url '/productos/implementacion.html' %}#soporte" class="btn btn-primary btn-sm mb-lg">Soporte Técnico</a>
                                 
                             </div>
                         </div>
@@ -35,13 +55,23 @@
                         <div class="featured-box featured-box-primary featured-box-effect-4" style="height: 199px;">
                             <div class="box-content">
                                 <i class="icon-featured fa fa-server"></i>
-                                <h4>Almacenamiento y mantenimiento de servidores</h4>
-                               <hr>
-                                <ul>
-                                    <li>Almacenamiento y mantenimiento de servidores</li>
-                                    <li>Olvídate de comprar servidores nuevos o contratar más personal.</li>
-                                    <li>Información bajo las mejores prácticas de seguridad.</li>
-                                </ul>
+                                {% if lang == "es" %}
+                                    <h4>Almacenamiento y mantenimiento de servidores</h4>
+                                     <hr>
+                                    <ul>
+                                        <li>Olvídate de comprar servidores nuevos o contratar más personal.</li>
+                                        <li>Información bajo las mejores prácticas de seguridad.</li>
+                                    </ul>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    <h4>World-class server hosting and maintenance</h4>
+                                   <hr>
+                                    <ul>
+                                        <li>Forget about buying extra servers or hiring more IT personnel</li>
+                                        <li>Información bajo las mejores prácticas de seguridad.</li>
+                                    </ul>
+                                {% endif %}
+                               
                             </div>
                         </div>
                     </div>
@@ -51,12 +81,22 @@
                         <div class="featured-box featured-box-primary featured-box-effect-4" style="height: 199px;">
                             <div class="box-content">
                                 <i class="icon-featured fa fa-refresh"></i>
-                                <h4>Mejoras y actualizaciones<br><br></h4>
-                                <hr>
-                                <ul>
-                                    <li>Nuestras soluciones cada vez son más eficientes.</li>
-                                    <li>Todas nuestras mejoras son validadas por usuarios para asegurarnos que sean fáciles de usar</li>
-                                </ul>
+                                {% if lang == "es" %}
+                                    <h4>Mejoras y actualizaciones<br><br></h4>
+                                    <hr>
+                                    <ul>
+                                        <li>Nuestras soluciones cada vez son más eficientes.</li>
+                                        <li>Todas nuestras mejoras son validadas por usuarios para asegurarnos que sean fáciles de usar</li>
+                                    </ul>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    <h4>Software updates<br><br></h4>
+                                    <hr>
+                                    <ul>
+                                        <li>Periodically, we release new updates to make the application faster and more efficient</li>
+                                        <li>Todas nuestras mejoras son validadas por usuarios para asegurarnos que sean fáciles de usar</li>
+                                    </ul>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

@@ -19,18 +19,27 @@
           data-transform_out="opacity:0;s:500;"
           style="z-index: 5"
           data-mask_in="x:0px;y:0px;" >
-          La clave del éxito de un proyecto <br />
-          tecnológico es su implementación</div>
-
-
+            {% if lang == "es" %}
+                La clave del éxito de un proyecto <br>tecnológico es su implementación
+            {% endif %}
+            {% if lang == "en" %}
+                A well-done  implementation is key for the<br> success of a new technology in your business 
+            {% endif %}
+        </div>
         <div class="tp-caption bottom-label top-ubiqua"
           data-x="left" data-hoffset="-150"
           data-y="center" data-voffset="-25"
           data-start="1000"
           style="z-index: 5"
           data-transform_in="y:[-300%];opacity:0;s:500;">
-            Tenemos al mejor equipo de gerentes de proyecto y <br />
-            programadores dedicados a que las implementaciones <br />sean efectivas y de la mano con nuestros clientes<br><hr></div>
+            {% if lang == "es" %}
+                Tenemos al mejor equipo de gerentes de proyecto y <br>programadores dedicados a que las implementaciones <br>sean efectivas y de la mano con nuestros clientes
+            {% endif %}
+            {% if lang == "en" %}
+                Tenemos al mejor equipo de gerentes de proyecto y <br>programadores dedicados a que las implementaciones <br>sean efectivas y de la mano con nuestros clientes
+            {% endif %}
+            <br><hr>
+          </div>
 
         <a class="tp-caption btn btn-md btn-primary btn-slider-action tp-btn "
           data-hash
@@ -43,7 +52,15 @@
           data-transform_in="y:[100%];s:500;"
           data-transform_out="opacity:0;s:500;"
           style="z-index: 5"
-          data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModalContact">Solicite más información</a>
+          data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModalContact">
+            {% if lang == "es" %}
+                Solicite más información
+            {% endif %}
+            {% if lang == "en" %}
+                Get more Information!
+            {% endif %}
+            
+          </a>
 
       </li>
 

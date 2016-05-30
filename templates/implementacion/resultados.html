@@ -3,51 +3,101 @@
         <div class="row mb-md">
             <div class="col-md-12">
                 <div class="title">
-                    <h2>Resultados de nuestro <strong>Servicios al Cliente</strong></h2>
-                      <span>Nuestros <a href="{% url '/clientes.html' %}">clientes satisfechos</a> son nuestra mejor carta de presentación.</span>
+                    {% if lang == "es" %}
+                        <h2>Resultados de nuestro <strong>Servicios al Cliente</strong></h2>
+                        <span>Nuestros <a href="{% url '/clientes.html' %}">clientes satisfechos</a> son nuestra mejor carta de presentación.</span>
+                    {% endif %}
+                    {% if lang == "en" %}
+                        <h2>Resultados de nuestro <strong>Servicios al Cliente</strong></h2>
+                        <span>Nuestros <a href="{% url '/en/clients.html' %}">clientes satisfechos</a> son nuestra mejor carta de presentación.</span>
+                    {% endif %}
+                
                 </div>
             </div>
         </div>
         
         <div class="row mb-xlg">
             <div class="col-md-3 center result mb-xlg">
-                <h5>Calificación de servicio</h5>
-                <small>Calificación de nuestro servicio<br> en la última encuesta realizada.</small>
-                <hr>
-                <div class="counters">
-                    <div class="counter  counter-primary big">
-                        <i class="fa fa-check-circle"></i>
-                        <strong data-to="96" data-append="%"></strong>
-                        <label>Efectividad</label>
+                {% if lang == "es" %}
+                    <h5>Calificación de servicio</h5>
+                    <small>Calificación de nuestro servicio<br> en la última encuesta realizada.</small>
+                    <hr>
+                    <div class="counters">
+                        <div class="counter  counter-primary big">
+                            <i class="fa fa-check-circle"></i>
+                            <strong data-to="96" data-append="%"></strong>
+                            <label>Efectividad</label>
+                        </div>
                     </div>
-                </div>
-
+                {% endif %}
+                {% if lang == "en" %}
+                    <h5>Calificación de servicio</h5>
+                    <small>Calificación de nuestro servicio<br> en la última encuesta realizada.</small>
+                    <hr>
+                    <div class="counters">
+                        <div class="counter  counter-primary big">
+                            <i class="fa fa-check-circle"></i>
+                            <strong data-to="96" data-append="%"></strong>
+                            <label>Efectividad</label>
+                        </div>
+                    </div>
+                {% endif %}
 
             </div>
             <div class="col-md-3 center result mb-xlg">
-                <h5>Tiempo de Respuesta</h5>
-                <small>Nuestro tiempo de respuesta promedio<br> a una solicitud de soporte</small>
-                <hr>
-                <div class="counters">
-                    <div class="counter counter-primary big">
-                        <i class="fa fa-history"></i>
-                        <strong data-to="20" data-append=""></strong>
-                        <label>minutos</label>
+                {% if lang == "es" %}
+                    <h5>Tiempo de Respuesta</h5>
+                    <small>Nuestro tiempo de respuesta promedio<br> a una solicitud de soporte</small>
+                    <hr>
+                    <div class="counters">
+                        <div class="counter counter-primary big">
+                            <i class="fa fa-history"></i>
+                            <strong data-to="20" data-append=""></strong>
+                            <label>minutos</label>
+                        </div>
                     </div>
-                </div>
+                {% endif %}
+                {% if lang == "en" %}
+                    <h5>Response Time</h5>
+                    <small>Nuestro tiempo de respuesta promedio<br> a una solicitud de soporte</small>
+                    <hr>
+                    <div class="counters">
+                        <div class="counter counter-primary big">
+                            <i class="fa fa-history"></i>
+                            <strong data-to="20" data-append=""></strong>
+                            <label>minutes</label>
+                        </div>
+                    </div>
+                {% endif %}
+                
             </div>
 
 
             <div class="col-md-6 result bg-gray-light">
-                <h5>Opiniones de nuestros clientes</h5>
-                <small>Testimonios reales de nuestros usuarios y clientes</small>
+                {% if lang == "es" %}
+                    <h5>Opiniones de nuestros clientes</h5>
+                    <small>Testimonios reales de nuestros usuarios y clientes</small>
+                {% endif %}
+                {% if lang == "en" %}
+                    <h5>Clients Testimonials</h5>
+                    <small>Testimonios reales de nuestros usuarios y clientes</small>
+                {% endif %}
+                
                 <br><br>
                 <div class="owl-carousel owl-theme mb-none" data-plugin-options='{"items": 1}'>
                      <div>
                         <div class="col-md-12">
                             <div class="testimonial testimonial-style-3">
                                 <blockquote>
-                                    <p>Soporte trabaja muy bien. Es un equipo eficiente; atiende rápido las solicitudes. Los felicito</p>
+                                    <p>
+                                        {% if lang == "es" %}
+                                            Soporte trabaja muy bien. Es un equipo eficiente; atiende rápido las solicitudes. Los felicito
+                                        {% endif %}
+                                        {% if lang == "en" %}
+                                            Support works really well. Its a very efficient team. Congratulations
+                                        {% endif %}
+                                        
+                                    </p>
                                 </blockquote>
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">
@@ -63,7 +113,15 @@
                         <div class="col-md-12">
                             <div class="testimonial testimonial-style-3">
                                 <blockquote>
-                                    <p>Su servicio al cliente es increíble. Nunca había visto una compañía de tecnología que brinde tanto apoyo.</p>
+                                    <p>
+                                        {% if lang == "es" %}
+                                            Su servicio al cliente es increíble. Nunca había visto una compañía de tecnología que brinde tanto apoyo.
+                                        {% endif %}
+                                        {% if lang == "en" %}
+                                            Su servicio al cliente es increíble. Nunca había visto una compañía de tecnología que brinde tanto apoyo.
+                                        {% endif %}
+                                        
+                                    </p>
                                 </blockquote>
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">
@@ -79,7 +137,15 @@
                         <div class="col-md-12">
                             <div class="testimonial testimonial-style-3">
                                 <blockquote>
-                                    <p>Quiero darles las gracias a ustedes por lo que han hecho. Desde que uso las tablets he pegado todas mis cuotas. La herramienta Ubiqua ha sido parte de mi éxito laboral. Me ha ayudado a mejorar la calidad de vida para mi familia.</p>
+                                    <p>
+                                        {% if lang == "es" %}
+                                            Quiero darles las gracias a ustedes por lo que han hecho. Desde que uso las tablets he pegado todas mis cuotas. La herramienta Ubiqua ha sido parte de mi éxito laboral. Me ha ayudado a mejorar la calidad de vida para mi familia.
+                                        {% endif %}
+                                        {% if lang == "en" %}
+                                            I want to thank you for everything you have done for me. Since I stated using ubiqua, I’ve reached my sales goals. 
+                                        {% endif %}
+                                        
+                                    </p>
                                 </blockquote>
                                 <div class="testimonial-arrow-down"></div>
                                 <div class="testimonial-author">

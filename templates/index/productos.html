@@ -7,43 +7,79 @@
          <div class="row mb-xlg center">
             <div class="col-md-12 ">
               <div class="title3">
-                        <h1>Soluciones <strong>Ubiqua</strong></h1>
-                        <span>Te ayudamos a <strong>aumentar tus ventas y disminuir tus costos operativos</strong><br> con soluciones modulares que son extremadamente fáciles de usar.</span>
-                    </div>
+                {% if lang == "es" %}
+                    <h1>Soluciones <strong>Ubiqua</strong></h1>
+                    <span>Te ayudamos a <strong>aumentar tus ventas y disminuir tus costos operativos</strong><br> con soluciones modulares que son extremadamente fáciles de usar.</span>
+                {% endif %}
+                {% if lang == "en" %}
+                    <h1>Our <strong>Solutions</strong></h1>
+                    <span><strong>Increase your sales and decrease your operating costs</strong><br> by empowering your employees with effective and easy-to-use solutions</span>
+                {% endif %}
+               </div>
             </div>
         </div>
         <hr class="tall">
         <div class="row center">
             <div class="col-md-4 mb-xl">
-                <a href="{% url '/productos/ave.html' %}"><img class="img-responsive doted-border img-hover appear-animation circle" src="{% static '/img/index/ave.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft"></a>
-
-                <h4 class="mt-xl"><strong>Ubiqua</strong> AVE</h4>
-                <p >
-                    Herramienta que convierte a tu vendedor de un tomador de pedidos a un asesor de ventas.<br><br>
-                </p>
-                <a href="{% url '/productos/ave.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua AVE</a>
+                {% if lang == "es" %}
+                    <a href="{% url '/productos/ave.html' %}"><img class="img-responsive doted-border img-hover appear-animation circle" src="{% static '/img/index/ave.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft"></a>
+                    <h4 class="mt-xl"><strong>Ubiqua</strong> AVE</h4>
+                    <p >
+                        Herramienta que convierte a tu vendedor de un tomador de pedidos a un asesor de ventas.<br><br>
+                    </p>
+                    <a href="{% url '/productos/ave.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua AVE</a>
+                {% endif %}
+                {% if lang == "en" %}
+                    <a href="{% url '/en/products/ave.html' %}"><img class="img-responsive doted-border img-hover appear-animation circle" src="{% static '/img/index/ave.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft"></a>
+                    <h4 class="mt-xl"><strong>Ubiqua</strong> AVE</h4>
+                    <p >
+                        Sales application for b2b salesmen that help them sell more effectively.<br><br>
+                    </p>
+                    <a href="{% url '/en/products/ave.html' %}" class="btn btn-primary btn-sm">Read more about Ubiqua AVE</a>
+                {% endif %}
             </div>
 
             
 
 
             <div class="col-md-4 mb-xl">
-                <a href="{% url '/productos/poc.html' %}"><img class="img-responsive appear-animation img-hover doted-border circle " src="{% static '/img/index/poc.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight"></a>
-            
-                <h4 class="mt-xl">Ubiqua <strong>POC</strong></h4>
-                <p >
-                    Nos encargamos de la facturación de las órdenes de compra de tus clientes acelerando tu facturación y ahorrando costos operativos. 
-                </p>
-                <a href="{% url '/productos/poc.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua POC</a>
+                
+                {% if lang == "es" %}
+                    <a href="{% url '/productos/poc.html' %}"><img class="img-responsive appear-animation img-hover doted-border circle " src="{% static '/img/index/poc.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight"></a>
+                    <h4 class="mt-xl">Ubiqua <strong>POC</strong></h4>
+                    <p >
+                        Nos encargamos de la facturación de las órdenes de compra de tus clientes acelerando tu facturación y ahorrando costos operativos. 
+                    </p>
+                    <a href="{% url '/productos/poc.html' %}" class="btn btn-primary btn-sm">Conozca más de Ubiqua POC</a>
+                {% endif %}
+                {% if lang == "en" %}
+                    <a href="{% url '/en/products/poc.html' %}"><img class="img-responsive appear-animation img-hover doted-border circle " src="{% static '/img/index/poc.jpg' %}" alt="style switcher" data-appear-animation="fadeInRight"></a>
+                    <h4 class="mt-xl">Ubiqua <strong>POC</strong></h4>
+                    <p >
+                        Software that automatically processes purchase orders from your biggest clients accelerating your billing process.
+                    </p>
+                    <a href="{% url '/en/products/poc.html' %}" class="btn btn-primary btn-sm">Read more about Ubiqua POC</a>
+                {% endif %}
             </div>
 
             <div class="col-md-4 mb-xl">
-                <img class="img-responsive  doted-border appear-animation circle" src="{% static '/img/index/ana-temp.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
-                <h4 class="mt-xl">Ubiqua <strong>ANALYTICS</strong></h4>
-                <p>
-                    Accesa a información de cobertura y ventas 
-                </p>
-                <h4>Próximamente...</h4>
+                
+                {% if lang == "es" %}
+                    <img class="img-responsive  doted-border appear-animation circle" src="{% static '/img/index/ana-temp.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
+                    <h4 class="mt-xl">Ubiqua <strong>ANALYTICS</strong></h4>
+                    <p>
+                        Accesa a información de cobertura y ventas 
+                    </p>
+                    <h4>Próximamente...</h4>
+                {% endif %}
+                {% if lang == "en" %}
+                    <img class="img-responsive  doted-border appear-animation circle" src="{% static '/img/index/ana-temp.jpg' %}" alt="layout styles" data-appear-animation="fadeInLeft">
+                    <h4 class="mt-xl">Ubiqua <strong>ANALYTICS</strong></h4>
+                    <p>
+                        Application for supervisors and managers to help them make better informed and timely decisions  
+                    </p>
+                    <h4>Coming soon...</h4>
+                {% endif %}
             </div>
             
         </div>

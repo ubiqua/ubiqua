@@ -3,7 +3,14 @@
   <div class="container">
     <div class="row mb-xlg">
         <div class="col-md-12 center">
-          <h2 class="word-rotator-title mb-sm">¿Cómo mejoramos tu <strong>rentabilidad</strong> ?</h2>
+            <h2 class="word-rotator-title mb-sm">
+                {% if lang == "es" %}
+                    ¿Cómo mejoramos tu <strong>rentabilidad</strong> ?
+                {% endif %}
+                {% if lang == "en" %}
+                    How do we improve your <strong>profitability</strong> ?
+                {% endif %}
+            </h2>
         </div>
     </div>
     <hr class="tall">
@@ -15,13 +22,31 @@
                         <div class="box-content">
                             <i class="icon-featured fa fa-search"></i>
                             <div class="title">
-                                <h2>Somos expertos en tu <strong>proceso de ventas</strong></h2>
+                                <h2>
+                                {% if lang == "es" %}
+                                    Somos expertos en tu <strong>proceso de ventas</strong>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    Somos expertos en tu <strong>proceso de ventas</strong>
+                                {% endif %}
+                                </h2>
                             </div>
                             <p class="lead2">
-                                Nos volvemos expertos en tu proceso de ventas. Entendemos qué venden, cómo lo venden y a quién
+                                {% if lang == "es" %}
+                                    Nos volvemos expertos en tu proceso de ventas. Entendemos qué venden, cómo lo venden y a quién.
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    We become experts in your sales process. We study what you sell, how you sell it and to whom
+                                {% endif %}
                             </p>
-                            <a href="https://ubiquame.wordpress.com/2013/07/26/diseno-y-desarrollo-de-productos/" class="btn btn-primary btn-sm">Aprende más sobre nuestra metodología</a>
-                     <br>
+                                {% if lang == "es" %}
+                                <a href="https://ubiquame.wordpress.com/2013/07/26/diseno-y-desarrollo-de-productos/" class="btn btn-primary btn-sm">Aprende más sobre nuestra metodología</a>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                <a href="https://ubiquame.wordpress.com/2013/07/26/diseno-y-desarrollo-de-productos/" class="btn btn-primary btn-sm">Learn more about our research methodology</a>
+                                {% endif %}
+
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -30,13 +55,31 @@
                         <div class="box-content">
                             <i class="icon-featured fa fa-refresh"></i>
                             <div class="title">
-                                <h2>Sincronización de tus <strong>Datos</strong></h2>
+                                <h2>
+                                    {% if lang == "es" %}
+                                        Sincronización de tus <strong>Datos</strong>
+                                    {% endif %}
+                                    {% if lang == "en" %}
+                                        Sincronización de tus <strong>Datos</strong>
+                                    {% endif %}
+                                    
+                                </h2>
                             </div>
                             <p class="lead2">
-                                Sincronizamos tu información comercial con nuestras soluciones tecnológicas para maximizar tus recursos actuales
+                                {% if lang == "es" %}
+                                    Sincronizamos tu información comercial con nuestras soluciones tecnológicas para maximizar tus recursos actuales
+                                {% endif %}
+                                {% if lang == "en" %}
+                                    We connect our solutions to your sales data source so you can take advantage of real time information
+                                {% endif %}
                             </p>
-                            <a href="{% url '/productos/implementacion.html' %}" class="btn btn-primary btn-sm">Aprende más sobre cómo nos sincronizamos</a>
-                     <br>
+                                {% if lang == "es" %}
+                                <a href="{% url '/productos/implementacion.html' %}" class="btn btn-primary btn-sm">Aprende más sobre cómo nos sincronizamos</a>
+                                {% endif %}
+                                {% if lang == "en" %}
+                                <a href="{% url '/en/products/integration.html' %}" class="btn btn-primary btn-sm">Learn more about our integration </a>
+                                {% endif %}
+                            <br>
                         </div>
                     </div>
                 </div>
