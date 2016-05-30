@@ -19,8 +19,14 @@
           data-transform_out="opacity:0;s:500;"
           style="z-index: 5"
           data-mask_in="x:0px;y:0px;" >
-          Procesa tus órdenes de compra <br />
-          de manera automática y sin errores</div>
+            {% if lang == "es" %}
+                Procesa tus órdenes de compra <br />de manera automática y sin errores
+            {% endif %}
+            {% if lang == "en" %}
+                Automatically and seamlessly <br>process your client's purchase orders
+            {% endif %}
+          
+          </div>
 
           
          <div class="tp-caption bottom-label top-ubiqua"
@@ -29,10 +35,17 @@
             data-start="1500"
             style="z-index: 5"
             data-transform_in="y:[100%];opacity:0;s:500;">
-            Los puntos de venta más grandes generan órdenes de compra <br />
-            y se las envían electrónicamente a su proveedor en distintos <br/ >
-            formatos. El procesamiento de estas órdenes es muy manual y <br>
-            propenso a errores.
+            {% if lang == "es" %}
+                Los puntos de venta más grandes generan órdenes de compra <br />
+                y se las envían electrónicamente a su proveedor en distintos <br/ >
+                formatos. El procesamiento de estas órdenes es muy manual y <br>
+                propenso a errores.
+            {% endif %}
+            {% if lang == "en" %}
+                Your biggest clients send you purchase orders in different<br>
+                formats. Transforming these orders into sales for your company<br>
+                is a very manual and error prone process.
+            {% endif %}
              <hr>
            </div>
 
@@ -47,7 +60,14 @@
           data-transform_in="y:[100%];s:500;"
           data-transform_out="opacity:0;s:500;"
           style="z-index: 5"
-          data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModalContact">Solicite más información</a>
+          data-mask_in="x:0px;y:0px;" data-toggle="modal" data-target="#formModalContact">
+            {% if lang == "es" %}
+                Solicite más información
+            {% endif %}
+            {% if lang == "en" %}
+                Get more information!
+            {% endif %}
+          </a>
 
       </li>
 
