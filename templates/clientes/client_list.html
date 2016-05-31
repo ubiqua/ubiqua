@@ -2,11 +2,16 @@
 <div class="container mb-xlg mt-xlg">
      <div class="row mb-xlg center">
             <div class="col-md-12 ">
-              <h2 class="word-rotator-title mb-sm">Algunas grandes empresas que ya usan<strong> Nuestras Soluciones</strong></h2>
-              <p class="lead">Más de 600 usuarios en 12 empresas de distribución y almacenamiento de mercancías</p>
+              <h2 class="word-rotator-title mb-sm">
+                    {% if lang == "es" %}
+                      Algunas grandes empresas que ya usan<strong> Nuestras Soluciones</strong>
+                    {% endif %}
+                    {% if lang == "en" %}
+                      Our clients are industry leaders
+                    {% endif %}
+                </h2>
             </div>
     </div>
-    <hr class="tall">
     <div class="row">
         <div class="col-md-12">
             <h4>
@@ -60,10 +65,8 @@
               </div>
             </div>
         </div>
-        
-        
+
+
   </div>
 
 </div>
-
-
