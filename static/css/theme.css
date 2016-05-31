@@ -2307,6 +2307,9 @@ section.section-custom-map-2 section.section {
 	width: 100%;
 	overflow: hidden;
 }
+.home-concept.en{
+    background: transparent url(../img/home-concept_en.png) no-repeat center 0;
+}
 
 .home-concept strong {
 	display: block;
@@ -2374,7 +2377,7 @@ section.section-custom-map-2 section.section {
 
 /* Responsive */
 @media (max-width: 991px) {
-	.home-concept {
+	.home-concept, .home-concept.en {
 		background: none;
 	}
 
@@ -4743,6 +4746,7 @@ div#formModal {
 ul.dropdown-menu.lang {
     min-width: inherit;
 }
+
 @media (max-width: 1200px) {
     .home-intro p {
         font-size: 1.8em;
