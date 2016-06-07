@@ -141,6 +141,7 @@
 		<script src="{% static 'vendor/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
 		<script src="{% static 'vendor/circle-flip-slideshow/js/jquery.flipshow.min.js' %}"></script>
 		<script src="{% static 'js/views/view.home.js' %}"></script>
+        <script src="{% static '/js/mandrill.js' %}"></script>
 
 		<!-- Theme Custom -->
 		<script src="{% static 'js/custom.js' %}"></script>
@@ -159,6 +160,15 @@
 			ga('send', 'pageview');
 		</script>
 		 -->
+        <script type="application/javascript" >   
+            $(document).ready(function(){ 
+                var url = window.location.href; 
+                $('#url_form1').val(url);
+                $('#url_form2').val(url);
+                $('#url').val(url);
+
+            }) 
+        </script>
 
 		 {% block scripts %}{% endblock %}
 
