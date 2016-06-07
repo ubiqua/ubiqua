@@ -16,13 +16,7 @@ en_url: ../en/contact_us/
     <div class="row">
         <div class="col-md-6">
 
-            <div class="alert alert-success hidden" id="contactSuccess">
-                <strong>Success!</strong> Your message has been sent to us.
-            </div>
-
-            <div class="alert alert-danger hidden" id="contactError">
-                <strong>Error!</strong> There was an error sending your message.
-            </div>
+            
 
             <h2 class="mb-sm mt-sm"><strong>Formulario</strong> de contacto</h2>
             <form id="contactForm">
@@ -33,9 +27,17 @@ en_url: ../en/contact_us/
                             <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
                         </div>
                         <div class="col-md-6">
-                            <label>dirección email *</label>
+                            <label>Dirección email *</label>
                             <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="hidden" value="Formulario Contacto ES" class="form-control" id="form" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="hidden" value="" class="form-control" id="url" required>
                     </div>
                 </div>
                 <div class="row">
@@ -49,14 +51,21 @@ en_url: ../en/contact_us/
                 <div class="row">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label>Mensaje *</label>
+                            <label>Mensaje</label>
                             <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
                         </div>
                     </div>
                 </div>
+                <div class="alert alert-success" id="contactSuccess" style="display:none;">
+                    <strong>¡Gracias por contactarnos!</strong> Su mensaje ha sido enviado correctamente.
+                </div>
+
+                <div class="alert alert-danger" id="contactError" style="display:none;">
+                    <strong>¡Error!</strong> Por favor rellene los campos obligatorios o inténtelo más tarde.
+                </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+                        <a href="javascript:void(0);" onclick="sendContact()" id="submit" class="btn btn-primary btn-lg mb-xlg">Enviar Mensaje</a>
                     </div>
                 </div>
             </form>
@@ -111,7 +120,7 @@ en_url: ../en/contact_us/
 
 {% block scripts %}
 
-<script src="{% static '/js/mail.js' %}"></script>
+<script src="{% static '/js/mandrill.js' %}"></script>
 <script src="http://maps.google.com/maps/api/js"></script>
 		<script type="text/javascript">
             // When the window has finished loading create our google map below
@@ -147,6 +156,11 @@ en_url: ../en/contact_us/
                     title: 'Ubiqua Soluciones'
                 });
             }
+            $(document).ready(function(){ 
+                var url = window.location.href; 
+                $('#url').val(url);
+            
+            }) 
         </script>
 
 {% endblock %}

@@ -7889,6 +7889,9 @@ ul.history li .featured-box {
 ul.history li .featured-box .box-content {
 	border-top-color: #CCC;
 }
+.required_field {
+    background-color: #f2dede;
+}
 
 /* Responsive */
 @media (max-width: 479px) {
