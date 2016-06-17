@@ -1,0 +1,7 @@
+{
+    "aws-access-key": "###############",
+    "aws-bucket-name": "ubiqua.me",
+    "aws-bucket-website": "ubiqua.me.s3-website-us-east-1.amazonaws.com",
+    "prettify": true,
+    "site-url": "http://ubiqua.me"
+}
