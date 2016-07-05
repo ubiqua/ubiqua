@@ -1,30 +1,55 @@
-<div class="slider-container rev_slider_wrapper" style="height: 600px;">
-  <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"delay": 9000, "gridwidth": 800, "gridheight": 600}'>
-    <ul>
+  <div class="slider-container rev_slider_wrapper" style="height: 600px;">
+    <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"delay": 9000, "gridwidth": 800, "gridheight": 600}'>
+      <ul>
 
-      <li data-transition="fade">
+<li data-transition="fade">
+  <img src="{% static '/img/slides/landing-page-slide-nosotros.jpg' %}"
+    alt="¿Quiénes Somos? - Ubiqua"
+    data-bgposition="center center"
+    data-bgfit="cover"
+    data-bgrepeat="no-repeat"
+    class="rev-slidebg">
 
-      <div class="tp-caption main-label text-left"
-          data-x="left" data-hoffset="-150"
-          data-y="center" data-voffset="-175"
-          data-start="500"
-          data-whitespace="nowrap"
-          data-transform_in="y:[100%];s:500;"
-          data-transform_out="opacity:0;s:500;"
-          style="z-index: 5"
-          data-mask_in="x:0px;y:0px;" >
-            {% if lang == "es" %}
-                ¿Cuál es el número de estacionamiento donde está en carro?
-                <br>
-                87
-            {% endif %}
-            
-          
-          </div>
+<div class="tp-caption main-label text-left"
+    data-x="left" data-hoffset="-150"
+    data-y="center" data-voffset="-150"
+    data-start="500"
+    data-whitespace="nowrap"
+    data-transform_in="y:[100%];s:500;"
+    data-transform_out="opacity:0;s:500;"
+    style="z-index: 5"
+    data-mask_in="x:0px;y:0px;" >
+        {% if lang == "es" %}
+         ¿Cuál es el número de estacionamiento donde está en carro?
+        {% endif %}
+        {% if lang == "en" %}
+         ¿Cuál es el número de estacionamiento donde está en carro?
+        {% endif %}
 
-          
-         
+    </div>
+
+
+  <div class="tp-caption top-label top-ubiqua"
+    data-x="left" data-hoffset="-150"
+    data-y="center" data-voffset="-65"
+    data-start="1000"
+    style="z-index: 5"
+    data-transform_in="y:[-300%];opacity:0;s:500;">
+      {% if lang == "es" %}
+87<br><hr>
+        {% endif %}
+        {% if lang == "en" %}
+        ¿Cuál es el número de estacionamiento donde está en carro?
+87
+<br><hr>
+        {% endif %}
+
+
+    </div>
+
+</li>        
+      </ul>
+    </div>
   </div>
-</div>
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
+  
+
