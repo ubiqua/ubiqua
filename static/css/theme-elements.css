@@ -4342,7 +4342,7 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 }
 .feature-box-icon.dark i{
     color:#000!important;
-    
+
 }
 
 .feature-box .feature-box-info {
@@ -4963,6 +4963,7 @@ html.webkit .thumb-info-no-borders .thumb-info-wrapper {
 	margin: 0 0 8px;
 	padding: 10px;
 	display: block;
+	min-height: 180px;
 }
 
 /* Thumb Info Side Image	*/
