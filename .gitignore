@@ -60,3 +60,5 @@ target/
 
 # Cactus S3 config
 config.json
+
+.DS_Store
