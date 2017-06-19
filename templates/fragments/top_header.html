@@ -6,12 +6,12 @@
                     <div class="header-logo">
                         {% if lang == "es" %}
                         <a href="{% url '/index.html' %}">
-                            <img class="logo" alt="Ubiqua Panamá logo" src="{% static '/img/logo.png' %}">
+                            <img class="logo" alt="Ubiqua Panamá logo" src="{% static '/img/logo-anniversary.png' %}">
                         </a>
                         {% endif %}
                         {% if lang == "en" %}
                         <a href="{% url '/en/index.html' %}">
-                            <img class="logo" alt="Ubiqua Panama logo" src="{% static '/img/logo.png' %}">
+                            <img class="logo" alt="Ubiqua Panama logo" src="{% static '/img/logo-anniversary.png' %}">
                         </a>
                         {% endif %} 
             
@@ -27,11 +27,6 @@
                                 <nav>
                                     <ul class="nav nav-pills" id="mainNav">
                                         {% if lang == "es" %}
-                                            <li class=" {% if_current_page '/index.html' 'active' %}">
-                                                <a class="" href="{% url '/index.html' %}">
-                                                    Inicio
-                                                </a>
-                                            </li>
                                             <li class="dropdown
                                                        {% if_current_page '/productos/implementacion.html' 'active' %}
                                                        {% if_current_page '/productos/ave.html' 'active' %}
