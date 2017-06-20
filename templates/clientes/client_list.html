@@ -1,22 +1,10 @@
 
 <div class="container mb-xlg mt-xlg">
-     <div class="row mb-xlg center">
-            <div class="col-md-12 ">
-              <h2 class="word-rotator-title mb-sm">
-                    {% if lang == "es" %}
-                      Algunas grandes empresas que ya usan<strong> Nuestras Soluciones</strong>
-                    {% endif %}
-                    {% if lang == "en" %}
-                      Our clients are industry leaders
-                    {% endif %}
-                </h2>
-            </div>
-    </div>
     <div class="row">
         <div class="col-md-12">
             <h4>
                 {% if lang == "es" %}
-                  Nuestros clientes son lideres de la industria
+                  Nuestros clientes son líderes de la industria
                 {% endif %}
                 {% if lang == "en" %}
                   Our clients are industry leaders
@@ -39,33 +27,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
-            <h4>
-                {% if lang == "es" %}
-                  Distribuyen y venden marcas como:
-                {% endif %}
-                {% if lang == "en" %}
-                  Our clients sell world class brands
-                {% endif %}
-            </h4>
-          <div class="content-grid content-grid-dashed mt-xlg mb-lg">
-              <div class="row content-grid-row">
-
-              {# Defined in client_list.py #}
-              {% for brand_item in BRAND_LIST %}
-                <div class="content-grid-item col-md-2 center">
-                    <img
-                      class="img-responsive"
-                      src="{% static brand_item.LOGO %}"
-                      alt="{{ brand_item.NAME }}"
-                      />
-                </div>
-              {% endfor %}
-
-              </div>
-            </div>
-        </div>
-
 
   </div>
 
