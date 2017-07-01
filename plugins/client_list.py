@@ -18,7 +18,7 @@ def client_list():
             "LOGO": "/img/clientes_bw/global.jpg",
             "NAME": "Felipe Motta",
         },{
-            "LOGO": "/img/clientes_bw/haseth.jpg",
+            "LOGO": "/img/clientes_bw/dilupa.png",
             "NAME": "Impa",
         },{
             "LOGO": "/img/clientes_bw/impadoel.jpg",
@@ -27,13 +27,13 @@ def client_list():
             "LOGO": "/img/clientes_bw/medimex.jpg",
             "NAME": "Metro",
         },{
-            "LOGO": "/img/clientes_bw/metro.jpg",
+            "LOGO": "/img/clientes_bw/escoffery.png",
             "NAME": "Tasty Choice",
         },{
             "LOGO": "/img/clientes_bw/tasty.jpg",
             "NAME": "Tshirt",
         },{
-            "LOGO": "/img/clientes_bw/tshirt.jpg",
+            "LOGO": "/img/clientes_bw/cochez.png",
             "NAME": "Wurth",
         },{
             "LOGO": "/img/clientes_bw/wurth.jpg",
