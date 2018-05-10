@@ -1,4 +1,5 @@
 <header id="header" class="header-narrow" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 0, "stickySetTop": "0"}'>
+    <div class="header">
     <div class="header-body">
         <div class="header-container container">
             <div class="header-row">
@@ -6,12 +7,12 @@
                     <div class="header-logo">
                         {% if lang == "es" %}
                         <a href="{% url '/index.html' %}">
-                            <img class="logo" alt="Ubiqua Panamá logo" src="{% static '/img/logo-anniversary.png' %}">
+                            <img class="logo" alt="Ubiqua Panamá logo" src="{% static '/img/logo-azul.png' %}">
                         </a>
                         {% endif %}
                         {% if lang == "en" %}
                         <a href="{% url '/en/index.html' %}">
-                            <img class="logo" alt="Ubiqua Panama logo" src="{% static '/img/logo-anniversary.png' %}">
+                            <img class="logo" alt="Ubiqua Panama logo" src="{% static '/img/logo-azul.png' %}">
                         </a>
                         {% endif %} 
             
@@ -27,12 +28,17 @@
                                 <nav>
                                     <ul class="nav nav-pills" id="mainNav">
                                         {% if lang == "es" %}
+                                             <li class="{% if_current_page '/nosotros.html' 'active' %}">
+                                                <a class="" href="{% url '/nosotros.html' %}">
+                                                    Nosotros
+                                                </a>
+                                            </li>
                                             <li class="dropdown
                                                        {% if_current_page '/productos/implementacion.html' 'active' %}
                                                        {% if_current_page '/productos/ave.html' 'active' %}
                                                        ">
                                                 <a class="dropdown-toggle" href="#">
-                                                    Productos
+                                                    Proyectos
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="{% url '/productos/implementacion.html' %}">Implementación</a></li>
@@ -47,11 +53,7 @@
                                                     Clientes
                                                 </a>
                                             </li>
-                                            <li class="{% if_current_page '/nosotros.html' 'active' %}">
-                                                <a class="" href="{% url '/nosotros.html' %}">
-                                                    Nosotros
-                                                </a>
-                                            </li>
+                                           
 
                                             <li>
                                                 <a class="" href="https://ubiquame.wordpress.com/">
@@ -59,8 +61,8 @@
                                                 </a>
 
                                             </li>
-                                             <button class="btn btn-quaternary" style="margin-top:15px;" data-toggle="modal" data-target="#formModalContact">
-                                              Contáctanos para saber más
+                                             <button class="btn btn-primary" style="margin-top:15px;" data-toggle="modal" data-target="#formModalContact">
+                                              CONTACTANOS
                                             </button>
 
 
@@ -76,9 +78,9 @@
                                             </li>
                                         {% endif %}
                                         {% if lang == "en" %}
-                                            <li class=" {% if_current_page '/index.html' 'active' %}">
-                                                <a class="" href="{% url '/en/index.html' %}">
-                                                    Home
+                                            <li class="{% if_current_page '/en/about_us.html' 'active' %}">
+                                                <a class="" href="{% url '/en/about_us.html' %}">
+                                                    About Us
                                                 </a>
                                             </li>
                                             <li class="dropdown
@@ -87,7 +89,7 @@
                                                        {% if_current_page '/en/products/poc.html' 'active' %}
                                                        ">
                                                 <a class="dropdown-toggle" href="#">
-                                                    Products
+                                                    Projects
                                                 </a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="{% url '/en/products/integration.html' %}">Integration</a></li>
@@ -102,11 +104,7 @@
                                                     Clients
                                                 </a>
                                             </li>
-                                            <li class="{% if_current_page '/en/about_us.html' 'active' %}">
-                                                <a class="" href="{% url '/en/about_us.html' %}">
-                                                    About Us
-                                                </a>
-                                            </li>
+
 
                                             <li class=" {% if_current_page '/en/contact_us.html' 'active' %}">
                                                 <a class="" href="{% url '/en/contact_us.html' %}">
